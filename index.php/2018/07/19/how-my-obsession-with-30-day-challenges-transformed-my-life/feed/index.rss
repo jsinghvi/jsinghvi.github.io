@@ -6,11 +6,11 @@
 	
 	>
 <channel>
-	<title>Comments for Jitesh&#039;s Blog</title>
-	<atom:link href="http://localhost/index.php/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>http://localhost</link>
+	<title>Comments on: How My Obsession with 30 Day Challenges Transformed My Life</title>
+	<atom:link href="http://localhost/index.php/2018/07/19/how-my-obsession-with-30-day-challenges-transformed-my-life/feed/" rel="self" type="application/rss+xml" />
+	<link>http://localhost/index.php/2018/07/19/how-my-obsession-with-30-day-challenges-transformed-my-life/</link>
 	<description>My Data Science journey!</description>
-	<lastBuildDate>Thu, 19 Jul 2018 13:58:00 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 19 Jul 2018 13:58:01 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.7</generator>

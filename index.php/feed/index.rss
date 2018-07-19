@@ -11,26 +11,61 @@
 	<title>Jitesh&#039;s Blog</title>
 	<atom:link href="http://localhost/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>http://localhost</link>
-	<description>My own personal blog</description>
-	<lastBuildDate>Wed, 18 Jul 2018 09:35:11 +0000</lastBuildDate>
+	<description>My Data Science journey!</description>
+	<lastBuildDate>Thu, 19 Jul 2018 13:31:57 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.7</generator>
 	<item>
-		<title>Hello world!</title>
-		<link>http://localhost/index.php/2018/07/18/hello-world/</link>
-		<comments>http://localhost/index.php/2018/07/18/hello-world/#comments</comments>
-		<pubDate>Wed, 18 Jul 2018 09:35:11 +0000</pubDate>
+		<title>How My Obsession with 30 Day Challenges Transformed My Life</title>
+		<link>http://localhost/index.php/2018/07/19/how-my-obsession-with-30-day-challenges-transformed-my-life/</link>
+		<comments>http://localhost/index.php/2018/07/19/how-my-obsession-with-30-day-challenges-transformed-my-life/#respond</comments>
+		<pubDate>Thu, 19 Jul 2018 13:10:10 +0000</pubDate>
 		<dc:creator><![CDATA[jsinghvi@blogger]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[30 day challenges]]></category>
+		<category><![CDATA[life lessons]]></category>
+		<category><![CDATA[motivation]]></category>
 
 		<guid isPermaLink="false">http://localhost/</guid>
-		<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
-				<content:encoded><![CDATA[<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+		<description><![CDATA[See that kid? That’s who I have always been. The scared little guy who always [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img class="alignnone wp-image-52 size-primer-featured" src="http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-1600x900.jpg" alt="" width="688" height="387" srcset="http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-1600x900.jpg 1600w, http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-300x169.jpg 300w, http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-768x432.jpg 768w, http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-1024x576.jpg 1024w" sizes="(max-width: 688px) 100vw, 688px" /></p>
+<p id="a7ef" class="graf graf--p graf-after--figure">See that kid? That’s who I have always been. The scared little guy who always overthinks about everything thrown at him, <em class="markup--em markup--p-em">wondering</em> if life is ever gonna get better.</p>
+<p id="2760" class="graf graf--p graf-after--p">Last November, I came across an interesting answer on Quora by <a class="markup--anchor markup--p-anchor" href="https://medium.com/@JohnMichael3" target="_blank" rel="noopener" data-href="https://medium.com/@JohnMichael3">John Michael Domingo</a> where he mentioned the 30 Day Challenge routine. I was immediately intrigued.</p>
+<p id="4e04" class="graf graf--p graf-after--p">Next thing I knew, I had embarked on a journey I had no idea would be so rewarding.</p>
+<h3 id="d6bc" class="graf graf--h3 graf-after--p">#1 — Cold Shower</h3>
+<p id="033e" class="graf graf--p graf-after--h3">The first challenge was taking cold showers. I knew it was going to be tough given the Winter season, but boy, it was terrifying!</p>
+<p id="7ab5" class="graf graf--p graf-after--p">The first few days showering was the most dreaded part of my routine. But what started off as a one time challenge still continues to be the first thing that gets my day going.</p>
+<h3 id="f9e6" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">#2 — Learning Spanish</strong></h3>
+<p id="e585" class="graf graf--p graf-after--h3">After completing (28/30) the cold shower challenge, I tried out my luck with Spanish. I had always wanted to learn Spanish but never really got to studying it with dedication or discipline.</p>
+<p id="b79f" class="graf graf--p graf-after--p">So I scavenged the Internet for some audio lessons, joined a language exchange group and spent 1 hour daily to explore the intricacies of the <em class="markup--em markup--p-em">most romantic language.</em></p>
+<p id="bcd4" class="graf graf--p graf-after--p">By the end of the month, I could comfortably talk with my new Spanish native friends about everyday stuff.</p>
+<h3 id="0514" class="graf graf--h3 graf-after--p">#3 — Reading Before Bed</h3>
+<p id="bf3b" class="graf graf--p graf-after--h3">Next up my to-do list was to dust off the books from my shelf and finally get around to reading them.</p>
+<p id="73e1" class="graf graf--p graf-after--p">I decided to read everyday for about 30 minutes until I dozed off. This way I could avoid clinging on to my smartphone which usually turned my <em class="markup--em markup--p-em">lets check out my facebook feed</em> to me <em class="markup--em markup--p-em">exploring theories on possible life on exoplanets.</em></p>
+<h3 id="74fa" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong"># Takeaway</strong></h3>
+<p id="6040" class="graf graf--p graf-after--h3">Sometimes it is better to <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">start off, then plan.</em></strong></p>
+<p id="4e48" class="graf graf--p graf-after--p">You get the point, don’t you?</p>
+<p id="f943" class="graf graf--p graf-after--p graf--trailing">Thanks for reading this.</p>
 ]]></content:encoded>
-			<wfw:commentRss>http://localhost/index.php/2018/07/18/hello-world/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
+			<wfw:commentRss>http://localhost/index.php/2018/07/19/how-my-obsession-with-30-day-challenges-transformed-my-life/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>post 2</title>
+		<link>http://localhost/index.php/2018/07/19/post-2/</link>
+		<comments>http://localhost/index.php/2018/07/19/post-2/#respond</comments>
+		<pubDate>Thu, 19 Jul 2018 07:44:28 +0000</pubDate>
+		<dc:creator><![CDATA[jsinghvi@blogger]]></dc:creator>
+				<category><![CDATA[Data Science]]></category>
+
+		<guid isPermaLink="false">http://localhost/</guid>
+		<description><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+]]></content:encoded>
+			<wfw:commentRss>http://localhost/index.php/2018/07/19/post-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
 </rss>
