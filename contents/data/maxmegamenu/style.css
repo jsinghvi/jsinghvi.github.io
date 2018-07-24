@@ -67,7 +67,7 @@ box-shadow: inset 0px 0px 3px 1px #0ff;
 }
 #mega-menu-wrap-primary #mega-menu-primary {
 visibility: visible;
-text-align: left;
+text-align: right;
 padding: 0px 0px 0px 0px;
 }
 @media only screen and (max-width: 600px) {
@@ -296,7 +296,7 @@ background: rgba(0, 0, 0, 0);
 -ms-border-radius: 0px 0px 0px 0px;
 -o-border-radius: 0px 0px 0px 0px;
 border-radius: 0px 0px 0px 0px;
-font-family: inherit;
+font-family: Tahoma, Geneva, sans-serif;
 font-size: 14px;
 }
 @media only screen and (min-width: 601px) {
