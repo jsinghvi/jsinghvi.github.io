@@ -6,7 +6,7 @@
 
 
 	
-<title>Cry of the Sky &#8211; Jitesh&#039;s Blog</title>
+<title>Simple Linear Regression using Python &#8211; Jitesh&#039;s Blog</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
 
@@ -93,14 +93,13 @@ body { color:#47425d}
 
 
 
-
 <!-- Start CSSHero.org Dynamic CSS & Fonts Loading -->
 	      <link rel="stylesheet" type="text/css" media="all" href="http://jsinghvi.github.io/" data-apply-prefixfree />
 	       <!-- End CSSHero.org Dynamic CSS & Fonts Loading -->    
 										<style type="text/css">/** Mega Menu CSS: fs **/</style>
 </head>
 
-<body class="post-template-default single single-post postid-65 single-format-standard mega-menu-primary">
+<body class="post-template-default single single-post postid-79 single-format-standard mega-menu-primary">
 
 	<div class="preloader">
 	    <div class="spinner">
@@ -127,7 +126,7 @@ body { color:#47425d}
 				<div class="col-md-8 col-sm-4 col-xs-12">
 					<div class="btn-menu"></div>
 					<nav id="mainnav" class="mainnav" role="navigation">
-						<div id="mega-menu-wrap-primary" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1' id='mega-toggle-block-1'><span class='mega-toggle-label'><span class='mega-toggle-label-closed'>MENU</span><span class='mega-toggle-label-open'>MENU</span></span></div></div></div><ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="200" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true"><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-64' id='mega-menu-item-64'><a class="dashicons-admin-home mega-menu-link" href="http://jiteshsinghvi.me" tabindex="0">Home</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-current-post-ancestor mega-current-menu-parent mega-current-post-parent mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-43' id='mega-menu-item-43'><a class="dashicons-format-chat mega-menu-link" href="http://jsinghvi.github.io/index.php/category/blog/" tabindex="0">Blog</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-42' id='mega-menu-item-42'><a class="dashicons-book-alt mega-menu-link" href="http://jsinghvi.github.io/index.php/category/datascience/" tabindex="0">Data Science</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-44' id='mega-menu-item-44'><a class="dashicons-businessman mega-menu-link" href="http://jsinghvi.github.io/index.php/category/portfolio/" tabindex="0">Portfolio</a></li></ul></div>					</nav><!-- #site-navigation -->
+						<div id="mega-menu-wrap-primary" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1' id='mega-toggle-block-1'><span class='mega-toggle-label'><span class='mega-toggle-label-closed'>MENU</span><span class='mega-toggle-label-open'>MENU</span></span></div></div></div><ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="200" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true"><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-64' id='mega-menu-item-64'><a class="dashicons-admin-home mega-menu-link" href="http://jiteshsinghvi.me" tabindex="0">Home</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-43' id='mega-menu-item-43'><a class="dashicons-format-chat mega-menu-link" href="http://jsinghvi.github.io/index.php/category/blog/" tabindex="0">Blog</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-current-post-ancestor mega-current-menu-parent mega-current-post-parent mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-42' id='mega-menu-item-42'><a class="dashicons-book-alt mega-menu-link" href="http://jsinghvi.github.io/index.php/category/datascience/" tabindex="0">Data Science</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-44' id='mega-menu-item-44'><a class="dashicons-businessman mega-menu-link" href="http://jsinghvi.github.io/index.php/category/portfolio/" tabindex="0">Portfolio</a></li></ul></div>					</nav><!-- #site-navigation -->
 				</div>
 				</div>
 			</div>
@@ -155,29 +154,43 @@ body { color:#47425d}
 
 		
 			
-<article id="post-65" class="post-65 post type-post status-publish format-standard hentry category-blog">
+<article id="post-79" class="post-79 post type-post status-publish format-standard hentry category-datascience tag-jupyter-notebook tag-linear-regression tag-matplotlib tag-pandas tag-python">
 	
 	
 	<header class="entry-header">
 		
 		<div class="meta-post">
-			<a href="http://jsinghvi.github.io/index.php/category/blog/" title="Blog" class="post-cat">Blog</a>		</div>
+			<a href="http://jsinghvi.github.io/index.php/category/datascience/" title="Data Science" class="post-cat">Data Science</a>		</div>
 
-		<h1 class="title-post entry-title">Cry of the Sky</h1>
+		<h1 class="title-post entry-title">Simple Linear Regression using Python</h1>
 				<div class="single-meta">
-			<span class="posted-on">Posted <a href="http://jsinghvi.github.io/index.php/2018/07/24/cry-of-the-sky/" rel="bookmark"><time class="entry-date published" datetime="2018-07-24T18:09:12+00:00">July 24, 2018</time><time class="updated" datetime="2018-07-24T18:17:40+00:00">July 24, 2018</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="http://jsinghvi.github.io/index.php/author/jsinghviblogger/">jsinghvi@blogger</a></span></span>		</div><!-- .entry-meta -->
+			<span class="posted-on">Posted <a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/" rel="bookmark"><time class="entry-date published" datetime="2018-07-27T21:43:24+00:00">July 27, 2018</time><time class="updated" datetime="2018-07-27T21:45:30+00:00">July 27, 2018</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="http://jsinghvi.github.io/index.php/author/jsinghviblogger/">jsinghvi@blogger</a></span></span>		</div><!-- .entry-meta -->
 			</header><!-- .entry-header -->
 
 	
 	<div class="entry-content">
-		<p><img class="alignnone size-medium wp-image-69" src="http://jsinghvi.github.io/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-300x200.jpg" alt="" width="300" height="200" srcset="http://jsinghvi.github.io/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-300x200.jpg 300w, http://jsinghvi.github.io/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-768x512.jpg 768w, http://jsinghvi.github.io/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-1024x683.jpg 1024w, http://jsinghvi.github.io/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-830x553.jpg 830w, http://jsinghvi.github.io/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-230x153.jpg 230w, http://jsinghvi.github.io/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-350x233.jpg 350w, http://jsinghvi.github.io/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-480x320.jpg 480w" sizes="(max-width: 300px) 100vw, 300px" /></p>
-<p>As I sit inside the warmth of my room, the raindrops on the window catch my attention. The storm has finally settled down after an hour of downpour, but my heart hasn&#8217;t. Maybe it&#8217;s just my imagination, but over the past few months, every time that I witnessed a rainfall, it felt like it was calling out to me. While everyone heard the thunder&#8217;s mighty roar, I heard an outcry. Like, it was trying to tell us the pain that we have caused it. How, even after the ruthless way we treat it &#8211; the pollution, the overpopulation, the wastage, fuel hunting to name a few &#8211; it still bears us with such kindness.  We&#8217;ve hurt our planet far too much to even have the right to call it &#8216;Mother Earth&#8217;.</p>
-<p>Every day, every minute, we tread a path there&#8217;s no turning back from. And the most pitiful thing is that we&#8217;d rather turn a blind eye than do something about it. Now you might say &#8220;You&#8217;re wrong! Look there&#8217;s Tesla making electric cars, Denmark using renewable energy, people planting tress, yada yada..&#8221;, but ask yourself this &#8211; Is this enough to make up for the sins we&#8217;ve committed? for all the recklessness we evince everyday?</p>
-<p>Our fate hangs by a thread, but we insist on staying ignorant. The future seems unclear, and honestly, it feels like soon we&#8217;re gonna turn from Masters to Scavengers.. Any hope for our Salvation? Maybe not. Or is there?</p>
+		<p>Whenever one sets off to study about Machine Learning, the first thing they inadvertently come across is Linear Regression. It is arguably the simplest ML model. Let&#8217;s take a quick look at it with it&#8217;s implementation using Python.</p>
+<h1>What is Linear Regression?</h1>
+<p>To put it in simple terms, Linear Regression is a statistical model that identifies the linear relationship between two or more variables &#8211; where one of them is the <strong>Dependent Variable </strong>and the other one(s) being <strong>Independent Variable(s). </strong>What this basically means is that when one increases, the other increases and vice versa.</p>
+<figure id="attachment_80" style="width: 339px" class="wp-caption aligncenter"><img class="wp-image-80 " src="http://jsinghvi.github.io/contents/data/2018/07/lin-rel-300x137.png" alt="" width="339" height="155" srcset="http://jsinghvi.github.io/contents/data/2018/07/lin-rel-300x137.png 300w, http://jsinghvi.github.io/contents/data/2018/07/lin-rel-230x105.png 230w, http://jsinghvi.github.io/contents/data/2018/07/lin-rel-350x160.png 350w, http://jsinghvi.github.io/contents/data/2018/07/lin-rel-480x219.png 480w, http://jsinghvi.github.io/contents/data/2018/07/lin-rel.png 560w" sizes="(max-width: 339px) 100vw, 339px" /><figcaption class="wp-caption-text">Source : http://www.statisticshowto.com/linear-relationship/</figcaption></figure>
+<p>We will be using Jupyter Notebook to run our code. The first thing we&#8217;ll be doing is to import the pandas module and read the datasets. I have stored my training and testing data in &#8216;linear.csv&#8217; and &#8216;test.csv&#8217; respectively.</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/fe15b44bd6e254337b81d165d58c0745.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/fe15b44bd6e254337b81d165d58c0745">Gist</a>.</noscript></div>
+<p>To see the shape of the training data, you can use train_data.shape , but if you wish to see some portion of the dataset, use .head attribute :</p>
+<p>&nbsp;</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/07544edfa7f880b68ac15837c75693fe.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/07544edfa7f880b68ac15837c75693fe">Gist</a>.</noscript></div>
+<p>Next, we&#8217;ll find the the mean values of the x and y attributes using the built-in mean() function. Also, we&#8217;ll be creating 2 new variables for further use.</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/afdfa384b2e3c6dd779e8ed32be1bc0c.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/afdfa384b2e3c6dd779e8ed32be1bc0c">Gist</a>.</noscript></div>
+<p>After this, we will calculate the initial value of <strong>m</strong>. The way this is done is by finding the standard deviation in the values of <strong>x </strong>and <strong>y. </strong>Also, the initial value of <strong>c </strong>is also found out.</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/760dabe1a2e46d3cc7c955fbbbcddfc9.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/760dabe1a2e46d3cc7c955fbbbcddfc9">Gist</a>.</noscript></div>
+<p>The last step is to <strong>Visualize </strong>the data using <strong>matplotlib</strong> module to plot the regression line.</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/1f128a022584e5c4f1215bc7bc259d5e.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/1f128a022584e5c4f1215bc7bc259d5e">Gist</a>.</noscript></div>
+<p><img class="alignnone size-medium wp-image-85" src="http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph-300x204.png" alt="" width="300" height="204" srcset="http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph-300x204.png 300w, http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph-230x156.png 230w, http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph-350x238.png 350w, http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph.png 392w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>That&#8217;s it! That is just how Simple Linear Regression was. 🙂</p>
+<p>PS : More posts coming soon!</p>
 			</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-			</footer><!-- .entry-footer -->
+		<span class="tags-links"> <a href="http://jsinghvi.github.io/index.php/tag/jupyter-notebook/" rel="tag">jupyter notebook</a><a href="http://jsinghvi.github.io/index.php/tag/linear-regression/" rel="tag">linear regression</a><a href="http://jsinghvi.github.io/index.php/tag/matplotlib/" rel="tag">matplotlib</a><a href="http://jsinghvi.github.io/index.php/tag/pandas/" rel="tag">pandas</a><a href="http://jsinghvi.github.io/index.php/tag/python/" rel="tag">python</a></span>	</footer><!-- .entry-footer -->
 
 	
 </article><!-- #post-## -->
@@ -185,7 +198,7 @@ body { color:#47425d}
 				<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
 		<div class="nav-links clearfix">
-			<div class="nav-previous"><span>&#10229;</span><a href="http://jsinghvi.github.io/index.php/2018/07/19/how-my-obsession-with-30-day-challenges-transformed-my-life/" rel="prev">How My Obsession with 30 Day Challenges Transformed My Life</a></div><div class="nav-next"><a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/" rel="next">Simple Linear Regression using Python</a><span>&#10230;</span></div>		</div><!-- .nav-links -->
+			<div class="nav-previous"><span>&#10229;</span><a href="http://jsinghvi.github.io/index.php/2018/07/24/cry-of-the-sky/" rel="prev">Cry of the Sky</a></div>		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	
 			
@@ -195,12 +208,12 @@ body { color:#47425d}
 	
 	
 		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/index.php/2018/07/24/cry-of-the-sky/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://jsinghvi.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/index.php/2018/07/27/simple-linear-regression-using-python/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://jsinghvi.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
 				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
 <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
 <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
 <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='65' id='comment_post_ID' />
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='79' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 </p>			</form>
 			</div><!-- #respond -->
@@ -249,7 +262,7 @@ body { color:#47425d}
 	<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
 		<div class="container">
 							<div class="sidebar-column col-md-4">
-					<aside id="sydney_contact_info-3" class="widget sydney_contact_info_widget"><h3 class="widget-title">Feel free to get in touch :</h3><div class="contact-email"><span><i class="fa fa-envelope"></i></span><a href="mailto:&#115;&#105;&#110;ghv&#105;&#46;j&#105;&#116;e&#115;&#104;&#64;&#103;m&#97;&#105;&#108;.&#99;om">&#115;&#105;&#110;ghv&#105;&#46;j&#105;&#116;e&#115;&#104;&#64;&#103;m&#97;&#105;&#108;.&#99;om</a></div></aside>				</div>
+					<aside id="sydney_contact_info-3" class="widget sydney_contact_info_widget"><h3 class="widget-title">Feel free to get in touch :</h3><div class="contact-email"><span><i class="fa fa-envelope"></i></span><a href="mailto:&#115;i&#110;gh&#118;&#105;.jitesh&#64;g&#109;ai&#108;.c&#111;m">&#115;i&#110;gh&#118;&#105;.jitesh&#64;g&#109;ai&#108;.c&#111;m</a></div></aside>				</div>
 				
 				
 				
@@ -278,6 +291,7 @@ var megamenu = {"timeout":"300","interval":"100"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://jsinghvi.github.io/contents/lib/megamenu/js/maxmegamenu.js'></script>
+<script type='text/javascript' src='http://jsinghvi.github.io/contents/lib/oembed-gist/js/script.min.js'></script>
 
 </body>
 </html>
