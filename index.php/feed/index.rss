@@ -12,12 +12,44 @@
 	<atom:link href="http://localhost/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>http://localhost</link>
 	<description>My Data Science journey!</description>
-	<lastBuildDate>Fri, 27 Jul 2018 16:15:30 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 07 Aug 2018 05:49:20 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9.7</generator>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
 	<item>
+		<title>Classification of apparels from Fashion MNIST dataset using Keras</title>
+		<link>http://localhost/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/</link>
+		<comments>http://localhost/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/#respond</comments>
+		<pubDate>Tue, 07 Aug 2018 05:03:13 +0000</pubDate>
+		<dc:creator><![CDATA[jsinghvi@blogger]]></dc:creator>
+				<category><![CDATA[Data Science]]></category>
+
+		<guid isPermaLink="false">http://localhost/</guid>
+		<description><![CDATA[In this post, we are going to talk about the Fashion MNIST dataset. It basically comprises of 55,000 Training Images and 10,000 Testing Images. Each one of them is a 28*28 grayscale image. Just like [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>In this post, we are going to talk about the Fashion MNIST dataset. It basically comprises of <strong>55,000 Training Images </strong>and <strong>10,000 Testing Images. </strong>Each one of them is a <strong>28*28 grayscale image. </strong>Just like the MNIST digits dataset, there are a total of 10 classes that the images can be classified into.</p>
+<p><img class="alignnone wp-image-90" src="http://localhost/contents/data/2018/08/fashion_mnist-300x300.png" alt="" width="342" height="342" srcset="http://localhost/contents/data/2018/08/fashion_mnist-300x300.png 300w, http://localhost/contents/data/2018/08/fashion_mnist-150x150.png 150w, http://localhost/contents/data/2018/08/fashion_mnist-768x768.png 768w, http://localhost/contents/data/2018/08/fashion_mnist-830x830.png 830w, http://localhost/contents/data/2018/08/fashion_mnist-230x230.png 230w, http://localhost/contents/data/2018/08/fashion_mnist-350x350.png 350w, http://localhost/contents/data/2018/08/fashion_mnist-480x480.png 480w, http://localhost/contents/data/2018/08/fashion_mnist.png 840w" sizes="(max-width: 342px) 100vw, 342px" /></p>
+<p>Let&#8217;s first start off with importing the necessary modules.</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/f3c8a060561253abd360e3f9ec9f4aeb">Gist</a>.</p>
+<p>Next, we&#8217;ll read the images and their labels in our script. Also, while we&#8217;re at it, let&#8217;s check their dimensions as well.</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/bd81ffec74fa52097d8acd46361a6e9c">Gist</a>.</p>
+<p>To get an idea of how the image looks like, we could use the matplotlib&#8217;s imshow() function.</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/f41d4b65992300c32ecdf86f7ac4c3b1">Gist</a>.</p>
+<p><img class="alignnone size-full wp-image-91" src="http://localhost/contents/data/2018/08/fashion_mnist_example_image.png" alt="" width="255" height="252" srcset="http://localhost/contents/data/2018/08/fashion_mnist_example_image.png 255w, http://localhost/contents/data/2018/08/fashion_mnist_example_image-230x227.png 230w" sizes="(max-width: 255px) 100vw, 255px" /></p>
+<p>Finally, let&#8217;s do some reshaping of the data so that it can be passed on to our neural network.</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/20bf233b75d60539da67f531c1a78155">Gist</a>.</p>
+<p>Here comes the most important part! It&#8217;s time we define our Neural Network architecture using the Keras API.</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/1f5ef0ae5fa4bef654f9d69e24dec6c3">Gist</a>.</p>
+<p>After we&#8217;re done defining the model, let&#8217;s feed it with the data that we have prepared. For starters, let&#8217;s keep the number of epochs to a small amount. You can always increase it, but beware of the <strong>overfitting </strong>demon.</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/2898d6fadd3657498b3984d6f264bd5c">Gist</a>.</p>
+<p>Time to put it to test? Hell yeah!</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/294868a46482a4d2597742f7ea122299">Gist</a>.</p>
+<p>Fhew! That was some pretty code for something so scary! <img src="https://s.w.org/images/core/emoji/11/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://localhost/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Simple Linear Regression using Python</title>
 		<link>http://localhost/index.php/2018/07/27/simple-linear-regression-using-python/</link>
 		<comments>http://localhost/index.php/2018/07/27/simple-linear-regression-using-python/#respond</comments>
@@ -48,7 +80,7 @@
 <p>The last step is to <strong>Visualize </strong>the data using <strong>matplotlib</strong> module to plot the regression line.</p>
 <p>View the code on <a href="https://gist.github.com/jsinghvi/1f128a022584e5c4f1215bc7bc259d5e">Gist</a>.</p>
 <p><img class="alignnone size-medium wp-image-85" src="http://localhost/contents/data/2018/07/linear_reg_matplotlib_graph-300x204.png" alt="" width="300" height="204" srcset="http://localhost/contents/data/2018/07/linear_reg_matplotlib_graph-300x204.png 300w, http://localhost/contents/data/2018/07/linear_reg_matplotlib_graph-230x156.png 230w, http://localhost/contents/data/2018/07/linear_reg_matplotlib_graph-350x238.png 350w, http://localhost/contents/data/2018/07/linear_reg_matplotlib_graph.png 392w" sizes="(max-width: 300px) 100vw, 300px" /></p>
-<p>That&#8217;s it! That is just how Simple Linear Regression was. <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>That&#8217;s it! That is just how Simple Linear Regression was. <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>PS : More posts coming soon!</p>
 ]]></content:encoded>
 			<wfw:commentRss>http://localhost/index.php/2018/07/27/simple-linear-regression-using-python/feed/</wfw:commentRss>
