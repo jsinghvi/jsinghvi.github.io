@@ -6,7 +6,7 @@
 
 
 	
-<title>Simple Linear Regression using Python &#8211; Jitesh&#039;s Blog</title>
+<title>Cancer Classification using Logistic Regression &#8211; Jitesh&#039;s Blog</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
 
@@ -93,14 +93,13 @@ body { color:#47425d}
 
 
 
-
 <!-- Start CSSHero.org Dynamic CSS & Fonts Loading -->
 	      <link rel="stylesheet" type="text/css" media="all" href="http://jsinghvi.github.io/" data-apply-prefixfree />
 	       <!-- End CSSHero.org Dynamic CSS & Fonts Loading -->    
 										<style type="text/css">/** Mega Menu CSS: fs **/</style>
 </head>
 
-<body class="post-template-default single single-post postid-79 single-format-standard mega-menu-primary">
+<body class="post-template-default single single-post postid-96 single-format-standard mega-menu-primary">
 
 	<div class="preloader">
 	    <div class="spinner">
@@ -155,7 +154,7 @@ body { color:#47425d}
 
 		
 			
-<article id="post-79" class="post-79 post type-post status-publish format-standard hentry category-datascience tag-jupyter-notebook tag-linear-regression tag-matplotlib tag-pandas tag-python">
+<article id="post-96" class="post-96 post type-post status-publish format-standard hentry category-datascience tag-cancer-dataset tag-classification tag-logistic-regression tag-sklearn">
 	
 	
 	<header class="entry-header">
@@ -163,35 +162,30 @@ body { color:#47425d}
 		<div class="meta-post">
 			<a href="http://jsinghvi.github.io/index.php/category/datascience/" title="Data Science" class="post-cat">Data Science</a>		</div>
 
-		<h1 class="title-post entry-title">Simple Linear Regression using Python</h1>
+		<h1 class="title-post entry-title">Cancer Classification using Logistic Regression</h1>
 				<div class="single-meta">
-			<span class="posted-on">Posted <a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/" rel="bookmark"><time class="entry-date published" datetime="2018-07-27T21:43:24+00:00">July 27, 2018</time><time class="updated" datetime="2018-07-27T21:45:30+00:00">July 27, 2018</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="http://jsinghvi.github.io/index.php/author/jsinghviblogger/">jsinghvi@blogger</a></span></span>		</div><!-- .entry-meta -->
+			<span class="posted-on">Posted <a href="http://jsinghvi.github.io/index.php/2018/08/08/cancer-classification-using-logistic-regression/" rel="bookmark"><time class="entry-date published updated" datetime="2018-08-08T12:29:54+00:00">August 8, 2018</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="http://jsinghvi.github.io/index.php/author/jsinghviblogger/">jsinghvi@blogger</a></span></span>		</div><!-- .entry-meta -->
 			</header><!-- .entry-header -->
 
 	
 	<div class="entry-content">
-		<p>Whenever one sets off to study about Machine Learning, the first thing they inadvertently come across is Linear Regression. It is arguably the simplest ML model. Let&#8217;s take a quick look at it with it&#8217;s implementation using Python.</p>
-<h1>What is Linear Regression?</h1>
-<p>To put it in simple terms, Linear Regression is a statistical model that identifies the linear relationship between two or more variables &#8211; where one of them is the <strong>Dependent Variable </strong>and the other one(s) being <strong>Independent Variable(s). </strong>What this basically means is that when one increases, the other increases and vice versa.</p>
-<figure id="attachment_80" style="width: 339px" class="wp-caption aligncenter"><img class="wp-image-80 " src="http://jsinghvi.github.io/contents/data/2018/07/lin-rel-300x137.png" alt="" width="339" height="155" srcset="http://jsinghvi.github.io/contents/data/2018/07/lin-rel-300x137.png 300w, http://jsinghvi.github.io/contents/data/2018/07/lin-rel-230x105.png 230w, http://jsinghvi.github.io/contents/data/2018/07/lin-rel-350x160.png 350w, http://jsinghvi.github.io/contents/data/2018/07/lin-rel-480x219.png 480w, http://jsinghvi.github.io/contents/data/2018/07/lin-rel.png 560w" sizes="(max-width: 339px) 100vw, 339px" /><figcaption class="wp-caption-text">Source : http://www.statisticshowto.com/linear-relationship/</figcaption></figure>
-<p>We will be using Jupyter Notebook to run our code. The first thing we&#8217;ll be doing is to import the pandas module and read the datasets. I have stored my training and testing data in &#8216;linear.csv&#8217; and &#8216;test.csv&#8217; respectively.</p>
-<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/fe15b44bd6e254337b81d165d58c0745.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/fe15b44bd6e254337b81d165d58c0745">Gist</a>.</noscript></div>
-<p>To see the shape of the training data, you can use train_data.shape , but if you wish to see some portion of the dataset, use .head attribute :</p>
-<p>&nbsp;</p>
-<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/07544edfa7f880b68ac15837c75693fe.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/07544edfa7f880b68ac15837c75693fe">Gist</a>.</noscript></div>
-<p>Next, we&#8217;ll find the the mean values of the x and y attributes using the built-in mean() function. Also, we&#8217;ll be creating 2 new variables for further use.</p>
-<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/afdfa384b2e3c6dd779e8ed32be1bc0c.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/afdfa384b2e3c6dd779e8ed32be1bc0c">Gist</a>.</noscript></div>
-<p>After this, we will calculate the initial value of <strong>m</strong>. The way this is done is by finding the standard deviation in the values of <strong>x </strong>and <strong>y. </strong>Also, the initial value of <strong>c </strong>is also found out.</p>
-<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/760dabe1a2e46d3cc7c955fbbbcddfc9.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/760dabe1a2e46d3cc7c955fbbbcddfc9">Gist</a>.</noscript></div>
-<p>The last step is to <strong>Visualize </strong>the data using <strong>matplotlib</strong> module to plot the regression line.</p>
-<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/1f128a022584e5c4f1215bc7bc259d5e.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/1f128a022584e5c4f1215bc7bc259d5e">Gist</a>.</noscript></div>
-<p><img class="alignnone size-medium wp-image-85" src="http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph-300x204.png" alt="" width="300" height="204" srcset="http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph-300x204.png 300w, http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph-230x156.png 230w, http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph-350x238.png 350w, http://jsinghvi.github.io/contents/data/2018/07/linear_reg_matplotlib_graph.png 392w" sizes="(max-width: 300px) 100vw, 300px" /></p>
-<p>That&#8217;s it! That is just how Simple Linear Regression was. 🙂</p>
-<p>PS : More posts coming soon!</p>
+		<p>I guess it&#8217;s time we take a look at the <strong>Logistic Regression </strong>algorithm. One thing to note is that, more often than not, this algorithm is confused with <strong>Linear Regression, </strong>but remember, they are <strong>NOT RELATED</strong> to each other in any way.</p>
+<h1>What is Logistic Regression?</h1>
+<p>It is a technique borrowed by Machine Learning from the field of Statistics (not the first one though). It is named after the method that is used at the core of it, i.e. the <strong>Logistic Function</strong>, or more commonly known as the <strong>Sigmoid Function. </strong><img class="aligncenter wp-image-97 size-full" src="http://jsinghvi.github.io/contents/data/2018/08/Logistic-Function.png" alt="" width="600" height="371" srcset="http://jsinghvi.github.io/contents/data/2018/08/Logistic-Function.png 600w, http://jsinghvi.github.io/contents/data/2018/08/Logistic-Function-300x186.png 300w, http://jsinghvi.github.io/contents/data/2018/08/Logistic-Function-230x142.png 230w, http://jsinghvi.github.io/contents/data/2018/08/Logistic-Function-350x216.png 350w, http://jsinghvi.github.io/contents/data/2018/08/Logistic-Function-480x297.png 480w" sizes="(max-width: 600px) 100vw, 600px" />                                                                              Fig. Logistic Function</p>
+<p>For the purpose of this tutorial, we will be dealing with the <strong>Cancer Dataset </strong>that is already present in the <strong>Scikit-learn</strong> package. Let&#8217;s start off as usual by importing the necessary packages :</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/6bbf866f5992dccdb5df6e6c36c84a86.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/6bbf866f5992dccdb5df6e6c36c84a86">Gist</a>.</noscript></div>
+<p>Next step is common sense, no? 🙂</p>
+<p>We&#8217;ll <strong>import the cancer dataset</strong> from the sklearn module and also the Logistic Regression submodule :</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/df5b2fbb9d31ac99a7a0d879c36ecdb9.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/df5b2fbb9d31ac99a7a0d879c36ecdb9">Gist</a>.</noscript></div>
+<p>Once we are done with that, let&#8217;s read this data into 2 variables and then <strong>train our model</strong> :</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/d874938a9c139de53cf9a3b57d4045b2.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/d874938a9c139de53cf9a3b57d4045b2">Gist</a>.</noscript></div>
+<p>Once you are done training the model, you can check the <strong>accuracy</strong> on both training and testing data, which is around 96% :</p>
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/083bd3a6eae683bc2253872e396cf74e.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/083bd3a6eae683bc2253872e396cf74e">Gist</a>.</noscript></div>
+<p>This is how we can build a simple Logistic Regression model using sklearn package and train it on the dataset of our choosing!</p>
 			</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<span class="tags-links"> <a href="http://jsinghvi.github.io/index.php/tag/jupyter-notebook/" rel="tag">jupyter notebook</a><a href="http://jsinghvi.github.io/index.php/tag/linear-regression/" rel="tag">linear regression</a><a href="http://jsinghvi.github.io/index.php/tag/matplotlib/" rel="tag">matplotlib</a><a href="http://jsinghvi.github.io/index.php/tag/pandas/" rel="tag">pandas</a><a href="http://jsinghvi.github.io/index.php/tag/python/" rel="tag">python</a></span>	</footer><!-- .entry-footer -->
+		<span class="tags-links"> <a href="http://jsinghvi.github.io/index.php/tag/cancer-dataset/" rel="tag">cancer dataset</a><a href="http://jsinghvi.github.io/index.php/tag/classification/" rel="tag">classification</a><a href="http://jsinghvi.github.io/index.php/tag/logistic-regression/" rel="tag">Logistic Regression</a><a href="http://jsinghvi.github.io/index.php/tag/sklearn/" rel="tag">sklearn</a></span>	</footer><!-- .entry-footer -->
 
 	
 </article><!-- #post-## -->
@@ -199,7 +193,7 @@ body { color:#47425d}
 				<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
 		<div class="nav-links clearfix">
-			<div class="nav-previous"><span>&#10229;</span><a href="http://jsinghvi.github.io/index.php/2018/07/24/cry-of-the-sky/" rel="prev">Cry of the Sky</a></div><div class="nav-next"><a href="http://jsinghvi.github.io/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/" rel="next">Classification of apparels from Fashion MNIST dataset using Keras</a><span>&#10230;</span></div>		</div><!-- .nav-links -->
+			<div class="nav-previous"><span>&#10229;</span><a href="http://jsinghvi.github.io/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/" rel="prev">Classification of apparels from Fashion MNIST dataset using Keras</a></div>		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	
 			
@@ -209,11 +203,11 @@ body { color:#47425d}
 	
 	
 		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/index.php/2018/07/27/simple-linear-regression-using-python/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://jsinghvi.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/index.php/2018/08/08/cancer-classification-using-logistic-regression/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://jsinghvi.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
 				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
 <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
 <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='79' id='comment_post_ID' />
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='96' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 </p>			</form>
 			</div><!-- #respond -->
@@ -268,7 +262,7 @@ body { color:#47425d}
 	<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
 		<div class="container">
 							<div class="sidebar-column col-md-4">
-					<aside id="sydney_contact_info-3" class="widget sydney_contact_info_widget"><h3 class="widget-title">Feel free to get in touch :</h3><div class="contact-email"><span><i class="fa fa-envelope"></i></span><a href="mailto:&#115;&#105;&#110;gh&#118;i.&#106;&#105;t&#101;sh&#64;&#103;&#109;&#97;i&#108;&#46;c&#111;m">&#115;&#105;&#110;gh&#118;i.&#106;&#105;t&#101;sh&#64;&#103;&#109;&#97;i&#108;&#46;c&#111;m</a></div></aside>				</div>
+					<aside id="sydney_contact_info-3" class="widget sydney_contact_info_widget"><h3 class="widget-title">Feel free to get in touch :</h3><div class="contact-email"><span><i class="fa fa-envelope"></i></span><a href="mailto:si&#110;&#103;h&#118;i.&#106;&#105;t&#101;&#115;h&#64;gm&#97;i&#108;&#46;c&#111;m">si&#110;&#103;h&#118;i.&#106;&#105;t&#101;&#115;h&#64;gm&#97;i&#108;&#46;c&#111;m</a></div></aside>				</div>
 				
 				
 				

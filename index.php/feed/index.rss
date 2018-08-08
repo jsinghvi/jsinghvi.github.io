@@ -12,12 +12,43 @@
 	<atom:link href="http://localhost/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>http://localhost</link>
 	<description>My Data Science journey!</description>
-	<lastBuildDate>Tue, 07 Aug 2018 05:49:20 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 08 Aug 2018 06:59:54 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.8</generator>
 	<item>
+		<title>Cancer Classification using Logistic Regression</title>
+		<link>http://localhost/index.php/2018/08/08/cancer-classification-using-logistic-regression/</link>
+		<comments>http://localhost/index.php/2018/08/08/cancer-classification-using-logistic-regression/#respond</comments>
+		<pubDate>Wed, 08 Aug 2018 06:59:54 +0000</pubDate>
+		<dc:creator><![CDATA[jsinghvi@blogger]]></dc:creator>
+				<category><![CDATA[Data Science]]></category>
+		<category><![CDATA[cancer dataset]]></category>
+		<category><![CDATA[classification]]></category>
+		<category><![CDATA[Logistic Regression]]></category>
+		<category><![CDATA[sklearn]]></category>
+
+		<guid isPermaLink="false">http://localhost/</guid>
+		<description><![CDATA[I guess it&#8217;s time we take a look at the Logistic Regression algorithm. One thing to note is that, more often than not, this algorithm is confused with Linear Regression, but remember, they are NOT [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I guess it&#8217;s time we take a look at the <strong>Logistic Regression </strong>algorithm. One thing to note is that, more often than not, this algorithm is confused with <strong>Linear Regression, </strong>but remember, they are <strong>NOT RELATED</strong> to each other in any way.</p>
+<h1>What is Logistic Regression?</h1>
+<p>It is a technique borrowed by Machine Learning from the field of Statistics (not the first one though). It is named after the method that is used at the core of it, i.e. the <strong>Logistic Function</strong>, or more commonly known as the <strong>Sigmoid Function. </strong><img class="aligncenter wp-image-97 size-full" src="http://localhost/contents/data/2018/08/Logistic-Function.png" alt="" width="600" height="371" srcset="http://localhost/contents/data/2018/08/Logistic-Function.png 600w, http://localhost/contents/data/2018/08/Logistic-Function-300x186.png 300w, http://localhost/contents/data/2018/08/Logistic-Function-230x142.png 230w, http://localhost/contents/data/2018/08/Logistic-Function-350x216.png 350w, http://localhost/contents/data/2018/08/Logistic-Function-480x297.png 480w" sizes="(max-width: 600px) 100vw, 600px" />                                                                              Fig. Logistic Function</p>
+<p>For the purpose of this tutorial, we will be dealing with the <strong>Cancer Dataset </strong>that is already present in the <strong>Scikit-learn</strong> package. Let&#8217;s start off as usual by importing the necessary packages :</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/6bbf866f5992dccdb5df6e6c36c84a86">Gist</a>.</p>
+<p>Next step is common sense, no? <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>We&#8217;ll <strong>import the cancer dataset</strong> from the sklearn module and also the Logistic Regression submodule :</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/df5b2fbb9d31ac99a7a0d879c36ecdb9">Gist</a>.</p>
+<p>Once we are done with that, let&#8217;s read this data into 2 variables and then <strong>train our model</strong> :</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/d874938a9c139de53cf9a3b57d4045b2">Gist</a>.</p>
+<p>Once you are done training the model, you can check the <strong>accuracy</strong> on both training and testing data, which is around 96% :</p>
+<p>View the code on <a href="https://gist.github.com/jsinghvi/083bd3a6eae683bc2253872e396cf74e">Gist</a>.</p>
+<p>This is how we can build a simple Logistic Regression model using sklearn package and train it on the dataset of our choosing!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://localhost/index.php/2018/08/08/cancer-classification-using-logistic-regression/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Classification of apparels from Fashion MNIST dataset using Keras</title>
 		<link>http://localhost/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/</link>
 		<comments>http://localhost/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/#respond</comments>
