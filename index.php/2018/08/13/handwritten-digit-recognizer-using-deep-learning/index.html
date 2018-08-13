@@ -6,7 +6,7 @@
 
 
 	
-<title>python &#8211; Jitesh&#039;s Blog</title>
+<title>Handwritten Digit Recognizer using Deep Learning &#8211; Jitesh&#039;s Blog</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
 
@@ -90,13 +90,17 @@ body { color:#47425d}
 
 
 
+
+
+
+
 <!-- Start CSSHero.org Dynamic CSS & Fonts Loading -->
 	      <link rel="stylesheet" type="text/css" media="all" href="http://jsinghvi.github.io/" data-apply-prefixfree />
 	       <!-- End CSSHero.org Dynamic CSS & Fonts Loading -->    
 										<style type="text/css">/** Mega Menu CSS: fs **/</style>
 </head>
 
-<body class="archive tag tag-python tag-12 mega-menu-primary">
+<body class="post-template-default single single-post postid-101 single-format-standard mega-menu-primary">
 
 	<div class="preloader">
 	    <div class="spinner">
@@ -123,7 +127,7 @@ body { color:#47425d}
 				<div class="col-md-8 col-sm-4 col-xs-12">
 					<div class="btn-menu"></div>
 					<nav id="mainnav" class="mainnav" role="navigation">
-						<div id="mega-menu-wrap-primary" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1' id='mega-toggle-block-1'><span class='mega-toggle-label'><span class='mega-toggle-label-closed'>MENU</span><span class='mega-toggle-label-open'>MENU</span></span></div></div></div><ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="200" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true"><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-64' id='mega-menu-item-64'><a class="dashicons-admin-home mega-menu-link" href="http://jiteshsinghvi.me" tabindex="0">Home</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-43' id='mega-menu-item-43'><a class="dashicons-format-chat mega-menu-link" href="http://jsinghvi.github.io/index.php/category/blog/" tabindex="0">Blog</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-42' id='mega-menu-item-42'><a class="dashicons-book-alt mega-menu-link" href="http://jsinghvi.github.io/index.php/category/datascience/" tabindex="0">Data Science</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-44' id='mega-menu-item-44'><a class="dashicons-businessman mega-menu-link" href="http://jsinghvi.github.io/index.php/category/portfolio/" tabindex="0">Portfolio</a></li></ul></div>					</nav><!-- #site-navigation -->
+						<div id="mega-menu-wrap-primary" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1' id='mega-toggle-block-1'><span class='mega-toggle-label'><span class='mega-toggle-label-closed'>MENU</span><span class='mega-toggle-label-open'>MENU</span></span></div></div></div><ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="200" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true"><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-64' id='mega-menu-item-64'><a class="dashicons-admin-home mega-menu-link" href="http://jiteshsinghvi.me" tabindex="0">Home</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-current-post-ancestor mega-current-menu-parent mega-current-post-parent mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-43' id='mega-menu-item-43'><a class="dashicons-format-chat mega-menu-link" href="http://jsinghvi.github.io/index.php/category/blog/" tabindex="0">Blog</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-42' id='mega-menu-item-42'><a class="dashicons-book-alt mega-menu-link" href="http://jsinghvi.github.io/index.php/category/datascience/" tabindex="0">Data Science</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-44' id='mega-menu-item-44'><a class="dashicons-businessman mega-menu-link" href="http://jsinghvi.github.io/index.php/category/portfolio/" tabindex="0">Portfolio</a></li></ul></div>					</nav><!-- #site-navigation -->
 				</div>
 				</div>
 			</div>
@@ -143,38 +147,101 @@ body { color:#47425d}
 		<div class="container content-wrapper">
 			<div class="row">	
 	
-	<div id="primary" class="content-area col-md-9 classic">
+	
+	<div id="primary" class="content-area col-md-9 ">
 
 		
 		<main id="main" class="post-wrap" role="main">
 
 		
-			<header class="page-header">
-				<h3 class="archive-title">Tag: python</h3>			</header><!-- .page-header -->
-
-			<div class="posts-layout">
 			
-				
-<article id="post-79" class="post-79 post type-post status-publish format-standard hentry category-datascience tag-jupyter-notebook tag-linear-regression tag-matplotlib tag-pandas tag-python">
-
+<article id="post-101" class="post-101 post type-post status-publish format-standard hentry category-blog">
+	
 	
 	<header class="entry-header">
-		<h2 class="title-post entry-title"><a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/" rel="bookmark">Simple Linear Regression using Python</a></h2>
-				<div class="meta-post">
-			<span class="posted-on">Posted <a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/" rel="bookmark"><time class="entry-date published" datetime="2018-07-27T21:43:24+00:00">July 27, 2018</time><time class="updated" datetime="2018-07-27T21:45:30+00:00">July 27, 2018</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="http://jsinghvi.github.io/index.php/author/jsinghviblogger/">jsinghvi@blogger</a></span></span><span class="comments-link"><a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/#respond">Leave a comment</a></span><span class="cat-links">Posted in <a href="http://jsinghvi.github.io/index.php/category/datascience/" rel="category tag">Data Science</a></span>		</div><!-- .entry-meta -->
+		
+		<div class="meta-post">
+			<a href="http://jsinghvi.github.io/index.php/category/blog/" title="Blog" class="post-cat">Blog</a>		</div>
+
+		<h1 class="title-post entry-title">Handwritten Digit Recognizer using Deep Learning</h1>
+				<div class="single-meta">
+			<span class="posted-on">Posted <a href="http://jsinghvi.github.io/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/" rel="bookmark"><time class="entry-date published updated" datetime="2018-08-13T12:32:48+00:00">August 13, 2018</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="http://jsinghvi.github.io/index.php/author/jsinghviblogger/">jsinghvi@blogger</a></span></span>		</div><!-- .entry-meta -->
 			</header><!-- .entry-header -->
 
-	<div class="entry-post">
-					<p>Whenever one sets off to study about Machine Learning, the first thing they inadvertently come across is Linear Regression. It is arguably the simplest ML model. Let&#8217;s take a quick look at it with it&#8217;s [&hellip;]</p>
-		
-			</div><!-- .entry-post -->
+	
+	<div class="entry-content">
+		<p>In this blog post, we are going to take a quick look at a Machine Learning technique that has taken the Technology Industry by storm.</p>
+
+<h2>What is Deep Learning?</h2>
+
+<p>Deep Learning is essentially a subset of Machine Learning that aims to simulate the working of a human brain, i.e. designing of neural networks that use the power of modern day computers to perform actions comparable to or better than humans.</p>
+
+<p>These actions may range from everyday tasks like distinguishing between a person or a dog, to predicting exoplanets across a galaxy.</p>
+
+<h2>Pre-requisites</h2>
+
+<ul><li>Python</li><li>Jupyter Notebook</li><li>Tensorflow</li></ul>
+
+<h2>Getting started</h2>
+
+<p>First off, we&#8217;ll start by importing the necessary modules, along with the MNIST dataset. MNIST is a large database of handwritten digits that is commonly used for training various image processing systems.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler">
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/87ad27249d7e4e38d8046a5be26e77f6.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/87ad27249d7e4e38d8046a5be26e77f6">Gist</a>.</noscript></div>
+</figure>
+
+<p>Once we are done importing stuff, we can go ahead and start building our network. To do that, first<g class="gr_ gr_4 gr-alert sel gr_gramm gr_replaced gr_inline_cards gr_disable_anim_appear Punctuation only-ins replaceWithoutSep" id="4" data-gr-id="4">,</g> we need to define some global variables.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler">
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/541048650a7bac85e47a03be7c1b2faa.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/541048650a7bac85e47a03be7c1b2faa">Gist</a>.</noscript></div>
+</figure>
+
+<p>After that, we will create a function neural_network_model() to specify the architecture of our input, hidden and output layers.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler">
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/27434425f28d9645881823c83ce333a3.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/27434425f28d9645881823c83ce333a3">Gist</a>.</noscript></div>
+</figure>
+
+<p>Now comes the most important part of all! We will now train the model.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler">
+<div class="oembed-gist"><script src="https://gist.github.com/jsinghvi/a7db7630c74e770506a3349eb7d91858.js"></script><noscript>View the code on <a href="https://gist.github.com/jsinghvi/a7db7630c74e770506a3349eb7d91858">Gist</a>.</noscript></div>
+</figure>
+
+<p>There you go! We&#8217;re all set.</p>
+
+<p>You can tweak around with the architecture, optimizer and other parameters to obtain better results. 🙂</p>
+			</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 			</footer><!-- .entry-footer -->
+
+	
 </article><!-- #post-## -->
-						</div>
+
+				<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links clearfix">
+			<div class="nav-previous"><span>&#10229;</span><a href="http://jsinghvi.github.io/index.php/2018/08/08/cancer-classification-using-logistic-regression/" rel="prev">Cancer Classification using Logistic Regression</a></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
 			
-			
+<div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://jsinghvi.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='101' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
 
 		
 		</main><!-- #main -->
@@ -224,7 +291,7 @@ body { color:#47425d}
 	<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
 		<div class="container">
 							<div class="sidebar-column col-md-4">
-					<aside id="sydney_contact_info-3" class="widget sydney_contact_info_widget"><h3 class="widget-title">Feel free to get in touch :</h3><div class="contact-email"><span><i class="fa fa-envelope"></i></span><a href="mailto:&#115;&#105;&#110;&#103;&#104;vi&#46;&#106;ite&#115;h&#64;g&#109;&#97;&#105;&#108;&#46;c&#111;&#109;">&#115;&#105;&#110;&#103;&#104;vi&#46;&#106;ite&#115;h&#64;g&#109;&#97;&#105;&#108;&#46;c&#111;&#109;</a></div></aside>				</div>
+					<aside id="sydney_contact_info-3" class="widget sydney_contact_info_widget"><h3 class="widget-title">Feel free to get in touch :</h3><div class="contact-email"><span><i class="fa fa-envelope"></i></span><a href="mailto:&#115;&#105;&#110;g&#104;&#118;&#105;.ji&#116;&#101;&#115;h&#64;&#103;&#109;&#97;il.&#99;o&#109;">&#115;&#105;&#110;g&#104;&#118;&#105;.ji&#116;&#101;&#115;h&#64;&#103;&#109;&#97;il.&#99;o&#109;</a></div></aside>				</div>
 				
 				
 				

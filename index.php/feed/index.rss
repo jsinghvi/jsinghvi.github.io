@@ -12,12 +12,67 @@
 	<atom:link href="http://localhost/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>http://localhost</link>
 	<description>My Data Science journey!</description>
-	<lastBuildDate>Wed, 08 Aug 2018 06:59:54 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 13 Aug 2018 07:02:48 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.8</generator>
 	<item>
+		<title>Handwritten Digit Recognizer using Deep Learning</title>
+		<link>http://localhost/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/</link>
+		<comments>http://localhost/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/#respond</comments>
+		<pubDate>Mon, 13 Aug 2018 07:02:48 +0000</pubDate>
+		<dc:creator><![CDATA[jsinghvi@blogger]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+
+		<guid isPermaLink="false">http://localhost/</guid>
+		<description><![CDATA[In this blog post, we are going to take a quick look at a Machine Learning technique that has taken the Technology Industry by storm. What is Deep Learning? Deep Learning is essentially a subset [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>In this blog post, we are going to take a quick look at a Machine Learning technique that has taken the Technology Industry by storm.</p>
+
+<h2>What is Deep Learning?</h2>
+
+<p>Deep Learning is essentially a subset of Machine Learning that aims to simulate the working of a human brain, i.e. designing of neural networks that use the power of modern day computers to perform actions comparable to or better than humans.</p>
+
+<p>These actions may range from everyday tasks like distinguishing between a person or a dog, to predicting exoplanets across a galaxy.</p>
+
+<h2>Pre-requisites</h2>
+
+<ul><li>Python</li><li>Jupyter Notebook</li><li>Tensorflow</li></ul>
+
+<h2>Getting started</h2>
+
+<p>First off, we&#8217;ll start by importing the necessary modules, along with the MNIST dataset. MNIST is a large database of handwritten digits that is commonly used for training various image processing systems.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler">
+View the code on <a href="https://gist.github.com/jsinghvi/87ad27249d7e4e38d8046a5be26e77f6">Gist</a>.
+</figure>
+
+<p>Once we are done importing stuff, we can go ahead and start building our network. To do that, first<g class="gr_ gr_4 gr-alert sel gr_gramm gr_replaced gr_inline_cards gr_disable_anim_appear Punctuation only-ins replaceWithoutSep" id="4" data-gr-id="4">,</g> we need to define some global variables.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler">
+View the code on <a href="https://gist.github.com/jsinghvi/541048650a7bac85e47a03be7c1b2faa">Gist</a>.
+</figure>
+
+<p>After that, we will create a function neural_network_model() to specify the architecture of our input, hidden and output layers.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler">
+View the code on <a href="https://gist.github.com/jsinghvi/27434425f28d9645881823c83ce333a3">Gist</a>.
+</figure>
+
+<p>Now comes the most important part of all! We will now train the model.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler">
+View the code on <a href="https://gist.github.com/jsinghvi/a7db7630c74e770506a3349eb7d91858">Gist</a>.
+</figure>
+
+<p>There you go! We&#8217;re all set.</p>
+
+<p>You can tweak around with the architecture, optimizer and other parameters to obtain better results. <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://localhost/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Cancer Classification using Logistic Regression</title>
 		<link>http://localhost/index.php/2018/08/08/cancer-classification-using-logistic-regression/</link>
 		<comments>http://localhost/index.php/2018/08/08/cancer-classification-using-logistic-regression/#respond</comments>
