@@ -5,14 +5,16 @@
 	xmlns:atom="http://www.w3.org/2005/Atom"
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+	
+xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+>
 
 <channel>
 	<title>Jitesh&#039;s Blog</title>
 	<atom:link href="http://localhost/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>http://localhost</link>
-	<description>My Data Science journey!</description>
-	<lastBuildDate>Mon, 13 Aug 2018 07:02:48 +0000</lastBuildDate>
+	<description>My Data Science Journey!</description>
+	<lastBuildDate>Sun, 09 Sep 2018 23:54:45 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -23,10 +25,14 @@
 		<comments>http://localhost/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/#respond</comments>
 		<pubDate>Mon, 13 Aug 2018 07:02:48 +0000</pubDate>
 		<dc:creator><![CDATA[jsinghvi@blogger]]></dc:creator>
-				<category><![CDATA[Blog]]></category>
+				<category><![CDATA[Data Science]]></category>
+		<category><![CDATA[jupyter notebook]]></category>
+		<category><![CDATA[mnist]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[tensorflow]]></category>
 
 		<guid isPermaLink="false">http://localhost/</guid>
-		<description><![CDATA[In this blog post, we are going to take a quick look at a Machine Learning technique that has taken the Technology Industry by storm. What is Deep Learning? Deep Learning is essentially a subset [&#8230;]]]></description>
+		<description><![CDATA[In this blog post, we are going to take a quick look at a Machine Learning technique that has taken the Technology Industry by storm. What is Deep Learning? Deep Learning is essentially a subset of Machine Learning that aims to simulate the working of a human brain, i.e. designing of neural networks that use [&#8230;]]]></description>
 				<content:encoded><![CDATA[<p>In this blog post, we are going to take a quick look at a Machine Learning technique that has taken the Technology Industry by storm.</p>
 
 <h2>What is Deep Learning?</h2>
@@ -42,6 +48,8 @@
 <h2>Getting started</h2>
 
 <p>First off, we&#8217;ll start by importing the necessary modules, along with the MNIST dataset. MNIST is a large database of handwritten digits that is commonly used for training various image processing systems.</p>
+
+<figure class="wp-block-image"><img src="http://localhost/contents/data/2018/09/MnistExamples.png" alt="" class="wp-image-106" srcset="http://localhost/contents/data/2018/09/MnistExamples.png 594w, http://localhost/contents/data/2018/09/MnistExamples-300x182.png 300w" sizes="(max-width: 594px) 100vw, 594px" /><figcaption>A sample from the dataset</figcaption></figure>
 
 <figure class="wp-block-embed is-type-rich is-provider-embed-handler">
 View the code on <a href="https://gist.github.com/jsinghvi/87ad27249d7e4e38d8046a5be26e77f6">Gist</a>.
@@ -85,7 +93,7 @@ View the code on <a href="https://gist.github.com/jsinghvi/a7db7630c74e770506a33
 		<category><![CDATA[sklearn]]></category>
 
 		<guid isPermaLink="false">http://localhost/</guid>
-		<description><![CDATA[I guess it&#8217;s time we take a look at the Logistic Regression algorithm. One thing to note is that, more often than not, this algorithm is confused with Linear Regression, but remember, they are NOT [&#8230;]]]></description>
+		<description><![CDATA[I guess it&#8217;s time we take a look at the Logistic Regression algorithm. One thing to note is that, more often than not, this algorithm is confused with Linear Regression, but remember, they are NOT RELATED to each other in any way. What is Logistic Regression? It is a technique borrowed by Machine Learning from [&#8230;]]]></description>
 				<content:encoded><![CDATA[<p>I guess it&#8217;s time we take a look at the <strong>Logistic Regression </strong>algorithm. One thing to note is that, more often than not, this algorithm is confused with <strong>Linear Regression, </strong>but remember, they are <strong>NOT RELATED</strong> to each other in any way.</p>
 <h1>What is Logistic Regression?</h1>
 <p>It is a technique borrowed by Machine Learning from the field of Statistics (not the first one though). It is named after the method that is used at the core of it, i.e. the <strong>Logistic Function</strong>, or more commonly known as the <strong>Sigmoid Function. </strong><img class="aligncenter wp-image-97 size-full" src="http://localhost/contents/data/2018/08/Logistic-Function.png" alt="" width="600" height="371" srcset="http://localhost/contents/data/2018/08/Logistic-Function.png 600w, http://localhost/contents/data/2018/08/Logistic-Function-300x186.png 300w, http://localhost/contents/data/2018/08/Logistic-Function-230x142.png 230w, http://localhost/contents/data/2018/08/Logistic-Function-350x216.png 350w, http://localhost/contents/data/2018/08/Logistic-Function-480x297.png 480w" sizes="(max-width: 600px) 100vw, 600px" />                                                                              Fig. Logistic Function</p>
@@ -110,9 +118,13 @@ View the code on <a href="https://gist.github.com/jsinghvi/a7db7630c74e770506a33
 		<pubDate>Tue, 07 Aug 2018 05:03:13 +0000</pubDate>
 		<dc:creator><![CDATA[jsinghvi@blogger]]></dc:creator>
 				<category><![CDATA[Data Science]]></category>
+		<category><![CDATA[fashion mnist]]></category>
+		<category><![CDATA[jupyter notebook]]></category>
+		<category><![CDATA[keras]]></category>
+		<category><![CDATA[python]]></category>
 
 		<guid isPermaLink="false">http://localhost/</guid>
-		<description><![CDATA[In this post, we are going to talk about the Fashion MNIST dataset. It basically comprises of 55,000 Training Images and 10,000 Testing Images. Each one of them is a 28*28 grayscale image. Just like [&#8230;]]]></description>
+		<description><![CDATA[In this post, we are going to talk about the Fashion MNIST dataset. It basically comprises of 55,000 Training Images and 10,000 Testing Images. Each one of them is a 28*28 grayscale image. Just like the MNIST digits dataset, there are a total of 10 classes that the images can be classified into. Let&#8217;s first [&#8230;]]]></description>
 				<content:encoded><![CDATA[<p>In this post, we are going to talk about the Fashion MNIST dataset. It basically comprises of <strong>55,000 Training Images </strong>and <strong>10,000 Testing Images. </strong>Each one of them is a <strong>28*28 grayscale image. </strong>Just like the MNIST digits dataset, there are a total of 10 classes that the images can be classified into.</p>
 <p><img class="alignnone wp-image-90" src="http://localhost/contents/data/2018/08/fashion_mnist-300x300.png" alt="" width="342" height="342" srcset="http://localhost/contents/data/2018/08/fashion_mnist-300x300.png 300w, http://localhost/contents/data/2018/08/fashion_mnist-150x150.png 150w, http://localhost/contents/data/2018/08/fashion_mnist-768x768.png 768w, http://localhost/contents/data/2018/08/fashion_mnist-830x830.png 830w, http://localhost/contents/data/2018/08/fashion_mnist-230x230.png 230w, http://localhost/contents/data/2018/08/fashion_mnist-350x350.png 350w, http://localhost/contents/data/2018/08/fashion_mnist-480x480.png 480w, http://localhost/contents/data/2018/08/fashion_mnist.png 840w" sizes="(max-width: 342px) 100vw, 342px" /></p>
 <p>Let&#8217;s first start off with importing the necessary modules.</p>
@@ -149,7 +161,7 @@ View the code on <a href="https://gist.github.com/jsinghvi/a7db7630c74e770506a33
 		<category><![CDATA[python]]></category>
 
 		<guid isPermaLink="false">http://localhost/</guid>
-		<description><![CDATA[Whenever one sets off to study about Machine Learning, the first thing they inadvertently come across is Linear Regression. It is arguably the simplest ML model. Let&#8217;s take a quick look at it with it&#8217;s [&#8230;]]]></description>
+		<description><![CDATA[Whenever one sets off to study about Machine Learning, the first thing they inadvertently come across is Linear Regression. It is arguably the simplest ML model. Let&#8217;s take a quick look at it with it&#8217;s implementation using Python. What is Linear Regression? To put it in simple terms, Linear Regression is a statistical model that [&#8230;]]]></description>
 				<content:encoded><![CDATA[<p>Whenever one sets off to study about Machine Learning, the first thing they inadvertently come across is Linear Regression. It is arguably the simplest ML model. Let&#8217;s take a quick look at it with it&#8217;s implementation using Python.</p>
 <h1>What is Linear Regression?</h1>
 <p>To put it in simple terms, Linear Regression is a statistical model that identifies the linear relationship between two or more variables &#8211; where one of them is the <strong>Dependent Variable </strong>and the other one(s) being <strong>Independent Variable(s). </strong>What this basically means is that when one increases, the other increases and vice versa.</p>
@@ -181,7 +193,7 @@ View the code on <a href="https://gist.github.com/jsinghvi/a7db7630c74e770506a33
 				<category><![CDATA[Blog]]></category>
 
 		<guid isPermaLink="false">http://localhost/</guid>
-		<description><![CDATA[As I sit inside the warmth of my room, the raindrops on the window catch my attention. The storm has finally settled down after an hour of downpour, but my heart hasn&#8217;t. Maybe it&#8217;s just [&#8230;]]]></description>
+		<description><![CDATA[As I sit inside the warmth of my room, the raindrops on the window catch my attention. The storm has finally settled down after an hour of downpour, but my heart hasn&#8217;t. Maybe it&#8217;s just my imagination, but over the past few months, every time that I witnessed a rainfall, it felt like it was [&#8230;]]]></description>
 				<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-69" src="http://localhost/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-300x200.jpg" alt="" width="300" height="200" srcset="http://localhost/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-300x200.jpg 300w, http://localhost/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-768x512.jpg 768w, http://localhost/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-1024x683.jpg 1024w, http://localhost/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-830x553.jpg 830w, http://localhost/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-230x153.jpg 230w, http://localhost/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-350x233.jpg 350w, http://localhost/contents/data/2018/07/geetanjal-khanna-81242-unsplash1-480x320.jpg 480w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <p>As I sit inside the warmth of my room, the raindrops on the window catch my attention. The storm has finally settled down after an hour of downpour, but my heart hasn&#8217;t. Maybe it&#8217;s just my imagination, but over the past few months, every time that I witnessed a rainfall, it felt like it was calling out to me. While everyone heard the thunder&#8217;s mighty roar, I heard an outcry. Like, it was trying to tell us the pain that we have caused it. How, even after the ruthless way we treat it &#8211; the pollution, the overpopulation, the wastage, fuel hunting to name a few &#8211; it still bears us with such kindness.  We&#8217;ve hurt our planet far too much to even have the right to call it &#8216;Mother Earth&#8217;.</p>
 <p>Every day, every minute, we tread a path there&#8217;s no turning back from. And the most pitiful thing is that we&#8217;d rather turn a blind eye than do something about it. Now you might say &#8220;You&#8217;re wrong! Look there&#8217;s Tesla making electric cars, Denmark using renewable energy, people planting tress, yada yada..&#8221;, but ask yourself this &#8211; Is this enough to make up for the sins we&#8217;ve committed? for all the recklessness we evince everyday?</p>
@@ -202,19 +214,19 @@ View the code on <a href="https://gist.github.com/jsinghvi/a7db7630c74e770506a33
 		<category><![CDATA[motivation]]></category>
 
 		<guid isPermaLink="false">http://localhost/</guid>
-		<description><![CDATA[See that kid? That’s who I have always been. The scared little guy who always overthinks about everything thrown at him, wondering if life is ever gonna get better. Last November, I came across an [&#8230;]]]></description>
+		<description><![CDATA[See that kid? That’s who I have always been. The scared little guy who always overthinks about everything thrown at him, wondering if life is ever gonna get better. Last November, I came across an interesting answer on Quora by John Michael Domingo where he mentioned the 30 Day Challenge routine. I was immediately intrigued. [&#8230;]]]></description>
 				<content:encoded><![CDATA[<p><img class="alignnone wp-image-52 size-primer-featured" src="http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-1600x900.jpg" alt="" width="688" height="387" srcset="http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-1600x900.jpg 1600w, http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-300x169.jpg 300w, http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-768x432.jpg 768w, http://localhost/contents/data/2018/07/mikito-tateisi-333584-unsplash-1024x576.jpg 1024w" sizes="(max-width: 688px) 100vw, 688px" /></p>
 <p id="a7ef" class="graf graf--p graf-after--figure">See that kid? That’s who I have always been. The scared little guy who always overthinks about everything thrown at him, <em class="markup--em markup--p-em">wondering</em> if life is ever gonna get better.</p>
 <p id="2760" class="graf graf--p graf-after--p">Last November, I came across an interesting answer on Quora by <a class="markup--anchor markup--p-anchor" href="https://medium.com/@JohnMichael3" target="_blank" rel="noopener" data-href="https://medium.com/@JohnMichael3">John Michael Domingo</a> where he mentioned the 30 Day Challenge routine. I was immediately intrigued.</p>
 <p id="4e04" class="graf graf--p graf-after--p">Next thing I knew, I had embarked on a journey I had no idea would be so rewarding.</p>
-<h3 id="d6bc" class="graf graf--h3 graf-after--p">#1 — Cold Shower</h3>
+<h3 id="d6bc" class="graf graf--h3 graf-after--p">#1 — Cold&nbsp;Shower</h3>
 <p id="033e" class="graf graf--p graf-after--h3">The first challenge was taking cold showers. I knew it was going to be tough given the Winter season, but boy, it was terrifying!</p>
 <p id="7ab5" class="graf graf--p graf-after--p">The first few days showering was the most dreaded part of my routine. But what started off as a one time challenge still continues to be the first thing that gets my day going.</p>
-<h3 id="f9e6" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">#2 — Learning Spanish</strong></h3>
+<h3 id="f9e6" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">#2 — Learning&nbsp;Spanish</strong></h3>
 <p id="e585" class="graf graf--p graf-after--h3">After completing (28/30) the cold shower challenge, I tried out my luck with Spanish. I had always wanted to learn Spanish but never really got to studying it with dedication or discipline.</p>
 <p id="b79f" class="graf graf--p graf-after--p">So I scavenged the Internet for some audio lessons, joined a language exchange group and spent 1 hour daily to explore the intricacies of the <em class="markup--em markup--p-em">most romantic language.</em></p>
 <p id="bcd4" class="graf graf--p graf-after--p">By the end of the month, I could comfortably talk with my new Spanish native friends about everyday stuff.</p>
-<h3 id="0514" class="graf graf--h3 graf-after--p">#3 — Reading Before Bed</h3>
+<h3 id="0514" class="graf graf--h3 graf-after--p">#3 — Reading Before&nbsp;Bed</h3>
 <p id="bf3b" class="graf graf--p graf-after--h3">Next up my to-do list was to dust off the books from my shelf and finally get around to reading them.</p>
 <p id="73e1" class="graf graf--p graf-after--p">I decided to read everyday for about 30 minutes until I dozed off. This way I could avoid clinging on to my smartphone which usually turned my <em class="markup--em markup--p-em">lets check out my facebook feed</em> to me <em class="markup--em markup--p-em">exploring theories on possible life on exoplanets.</em></p>
 <h3 id="74fa" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong"># Takeaway</strong></h3>

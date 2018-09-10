@@ -1,259 +1,392 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" class="no-js">
+<!--<![endif]-->
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <!-- scripts for IE8 and less  -->
+  <!--[if lt IE 9]>
+    <script src="http://localhost/undefined/contents/ui/theme/assets/front/js/vendors/html5.js"></script>
+  <![endif]-->
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
 <title>jupyter notebook &#8211; Jitesh&#039;s Blog</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
 
 
 
-<link rel='stylesheet' id='sydney-bootstrap-css'  href='http://jsinghvi.github.io/contents/ui/theme/css/bootstrap/bootstrap.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-core-blocks-css'  href='http://jsinghvi.github.io/contents/lib/gutenberg/build/core-blocks/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='megamenu-css'  href='http://jsinghvi.github.io/contents/data/maxmegamenu/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='http://jsinghvi.github.io/inc/css/dashicons.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='sydney-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C600%7CRaleway%3A400%2C500%2C600' type='text/css' media='all' />
-<link rel='stylesheet' id='sydney-style-css'  href='http://jsinghvi.github.io/contents/ui/theme/style.css' type='text/css' media='all' />
-<style id='sydney-style-inline-css' type='text/css'>
-.site-header { background-color:rgba(0,0,0,0.9);}
-.site-title { font-size:37px; }
-.site-description { font-size:16px; }
-#mainnav ul li a { font-size:19px; }
-h1 { font-size:52px; }
-h2 { font-size:42px; }
-h3 { font-size:32px; }
-h4 { font-size:25px; }
-h5 { font-size:20px; }
-h6 { font-size:18px; }
-body { font-size:16px; }
-.single .hentry .title-post { font-size:36px; }
-.header-image { background-size:cover;}
-.header-image { height:300px; }
-.site-header.float-header { background-color:rgba(0,0,0,0.9);}
-@media only screen and (max-width: 1024px) { .site-header { background-color:#000000;}}
-.site-title a, .site-title a:hover { color:#ffffff}
-.site-description { color:#ffffff}
-#mainnav ul li a, #mainnav ul li::before { color:#ffffff}
-#mainnav .sub-menu li a { color:#ffffff}
-#mainnav .sub-menu li a { background:#1c1c1c}
-.text-slider .maintitle, .text-slider .subtitle { color:#ffffff}
-body { color:#47425d}
-#secondary { background-color:#ffffff}
-#secondary, #secondary a, #secondary .widget-title { color:#767676}
-.footer-widgets { background-color:#252525}
-.btn-menu { color:#ffffff}
-#mainnav ul li a:hover { color:#d65050}
-.site-footer { background-color:#1c1c1c}
-.site-footer,.site-footer a { color:#666666}
-.overlay { background-color:#000000}
-.page-wrap { padding-top:70px;}
-.page-wrap { padding-bottom:8px;}
-.slide-inner { display:none;}
-.slide-inner.text-slider-stopped { display:block;}
-@media only screen and (max-width: 1025px) {		
-			.mobile-slide {
-				display: block;
-			}
-			.slide-item {
-				background-image: none !important;
-			}
-			.header-slider {
-			}
-			.slide-item {
-				height: auto !important;
-			}
-			.slide-inner {
-				min-height: initial;
-			} 
-		}
-@media only screen and (max-width: 780px) { 
-    	h1 { font-size: 32px;}
-		h2 { font-size: 28px;}
-		h3 { font-size: 22px;}
-		h4 { font-size: 18px;}
-		h5 { font-size: 16px;}
-		h6 { font-size: 14px;}
-    }
+<link rel='stylesheet' id='czr-gfonts-css'  href='//fonts.googleapis.com/css?family=Source+Sans+Pro' type='text/css' media='all' />
+<link rel='stylesheet' id='customizr-fa-css'  href='http://localhost/undefined/contents/ui/theme/assets/shared/fonts/fa/css/fontawesome-all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://localhost/undefined/contents/lib/gutenberg/build/block-library/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://localhost/undefined/inc/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='customizr-main-css'  href='http://localhost/undefined/contents/ui/theme/assets/front/css/style.min.css' type='text/css' media='all' />
+<style id='customizr-main-inline-css' type='text/css'>
 
+.tc-header.border-top { border-top-width: 5px; border-top-style: solid }
+#czr-push-footer { display: none; visibility: hidden; }
+        .czr-sticky-footer #czr-push-footer.sticky-footer-enabled { display: block; }
+        
 </style>
-<link rel='stylesheet' id='sydney-font-awesome-css'  href='http://jsinghvi.github.io/contents/ui/theme/fonts/font-awesome.min.css' type='text/css' media='all' />
-<!--[if lte IE 9]>
-<link rel='stylesheet' id='sydney-ie9-css'  href='http://jsinghvi.github.io/contents/ui/theme/css/ie9.css' type='text/css' media='all' />
-<![endif]-->
-<script type='text/javascript' src='http://jsinghvi.github.io/contents/lib/css-hero-ce/assets/js/prefixfree.min.js'></script>
-<script type='text/javascript' src='http://jsinghvi.github.io/inc/js/jquery/jquery.js'></script>
-<script type='text/javascript' src='http://jsinghvi.github.io/inc/js/jquery/jquery-migrate.min.js'></script>
+<link rel='stylesheet' id='customizr-ms-respond-css'  href='http://localhost/undefined/contents/ui/theme/assets/front/css/style-modular-scale.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://localhost/undefined/contents/lib/css-hero-ce/assets/js/prefixfree.min.js'></script>
+<script type='text/javascript' src='http://localhost/undefined/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://localhost/undefined/inc/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://localhost/undefined/contents/ui/theme/assets/front/js/libs/modernizr.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CZRParams = {"assetsPath":"http:\/\/localhost/undefined\/contents\/ui\/theme\/assets\/front\/","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"1","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"adminAjaxUrl":"http:\/\/localhost/undefined\/wp-admin\/admin-ajax.php","ajaxUrl":"http:\/\/localhost/undefined\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"1d255d02d7"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Permanently dismiss"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://localhost/undefined/contents/ui/theme/assets/front/js/tc-scripts.min.js'></script>
 
 
 
 <!-- Start CSSHero.org Dynamic CSS & Fonts Loading -->
-	      <link rel="stylesheet" type="text/css" media="all" href="http://jsinghvi.github.io/" data-apply-prefixfree />
+	      <link rel="stylesheet" type="text/css" media="all" href="http://localhost/undefined/" data-apply-prefixfree />
 	       <!-- End CSSHero.org Dynamic CSS & Fonts Loading -->    
-										<style type="text/css">/** Mega Menu CSS: fs **/</style>
-</head>
+										</head>
 
-<body class="archive tag tag-jupyter-notebook tag-15 mega-menu-primary">
+  <body class="archive tag tag-jupyter-notebook tag-15 czr-link-hover-underline header-skin-light footer-skin-dark czr-no-sidebar tc-center-images czr-post-list-context czr-sticky-footer">
+    
+    
+    <div id="tc-page-wrap" class="">
 
-	<div class="preloader">
-	    <div class="spinner">
-	        <div class="pre-bounce1"></div>
-	        <div class="pre-bounce2"></div>
-	    </div>
-	</div>
-	
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+      <header class="tpnav-header__header tc-header sl-logo_left sticky-brand-shrink-on sticky-transparent border-top czr-submenu-fade czr-submenu-move" role="banner" >
+                    <div class="primary-navbar__wrapper d-none d-lg-block has-horizontal-menu desktop-sticky" >
+  <div class="container">
+    <div class="row align-items-center flex-row primary-navbar__row">
+      <div class="branding__container col col-auto" >
+  <div class="branding align-items-center flex-column ">
+    <div class="branding-row d-flex align-self-start flex-row align-items-center">
+      <h1 class="navbar-brand col-auto " >
+  <a class="navbar-brand-sitename  czr-underline" href="http://localhost/undefined/"  title="Jitesh&#039;s Blog | My Data Science Journey!">
+    <span>Jitesh&#039;s Blog</span>
+  </a>
+</h1>
 
-		
-	<div class="header-clone"></div>
+      </div>
+    <span class="header-tagline " >
+  My Data Science Journey!</span>
 
-	
-	<header id="masthead" class="site-header" role="banner">
-		<div class="header-wrap">
-            <div class="container">
+  </div>
+</div>
+      <div class="primary-nav__container justify-content-lg-around col col-lg-auto flex-lg-column" >
+  <div class="primary-nav__wrapper flex-lg-row align-items-center justify-content-end">
+              <nav class="primary-nav__nav col" id="primary-nav">
+          <div class="nav__menu-wrapper primary-nav__menu-wrapper justify-content-end czr-open-on-hover" >
+<ul id="primary-nav" class="primary-nav__menu regular-nav nav__menu nav"><li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43"><a href="http://localhost/undefined/index.php/category/blog/" class="nav__link"><span class="nav__title">Blog</span></a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="http://localhost/undefined/index.php/category/datascience/" class="nav__link"><span class="nav__title">Data Science</span></a></li>
+<li id="menu-item-44" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44"><a href="http://localhost/undefined/index.php/category/portfolio/" class="nav__link"><span class="nav__title">Portfolio</span></a></li>
+</ul></div>        </nav>
+    <div class="primary-nav__utils nav__utils col-auto" >
+    <ul class="nav utils flex-row flex-nowrap regular-nav">
+      <li class="nav__search " >
+  <a href="#" class="search-toggle_btn icn-search czr-overlay-toggle_btn"  aria-expanded="false"><span class="sr-only">Search</span></a>
+  </li>
+    </ul>
+</div>  </div>
+</div>
+    </div>
+  </div>
+</div>          <div class="mobile-navbar__wrapper d-lg-none mobile-sticky" >
+    <div class="branding__container justify-content-between align-items-center container" >
+  <div class="branding flex-column">
+    <div class="branding-row d-flex align-self-start flex-row align-items-center">
+      <h1 class="navbar-brand col-auto " >
+  <a class="navbar-brand-sitename  czr-underline" href="http://localhost/undefined/"  title="Jitesh&#039;s Blog | My Data Science Journey!">
+    <span>Jitesh&#039;s Blog</span>
+  </a>
+</h1>
+
+    </div>
+    <span class="header-tagline col col-auto" >
+  My Data Science Journey!</span>
+
+  </div>
+  <div class="mobile-utils__wrapper nav__utils regular-nav">
+    <ul class="nav utils row flex-row flex-nowrap">
+      <li class="nav__search " >
+  <a href="#" class="search-toggle_btn icn-search czr-dropdown" data-aria-haspopup="true" aria-expanded="false"><span class="sr-only">Search</span></a>
+      <ul class="dropdown-menu czr-dropdown-menu">
+      <li class="header-search__container container">
+  <div class="search-form__container " >
+  <form action="http://localhost/undefined/" method="get" class="czr-form search-form">
+    <div class="form-group czr-focus">
+            <label for="s-5b95b3eeae2d0" id="lsearch-5b95b3eeae2d0"><span>Search</span><i class="icn-search"></i><i class="icn-close"></i></label>
+      <input id="s-5b95b3eeae2d0" class="form-control czr-search-field" name="s" type="text" value="" aria-describedby="lsearch-5b95b3eeae2d0" title="Search &hellip;">
+    </div>
+  </form>
+</div></li>    </ul>
+  </li>
+<li class="hamburger-toggler__container " >
+  <a href="#" class="ham-toggler-menu czr-collapsed" data-toggle="czr-collapse" data-target="#mobile-nav"><div class="ham__toggler-span-wrapper"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></div></a>
+</li>
+    </ul>
+  </div>
+</div>
+<div class="mobile-nav__container " >
+   <nav class="mobile-nav__nav flex-column czr-collapse" id="mobile-nav">
+      <div class="mobile-nav__inner container">
+      <div class="nav__menu-wrapper mobile-nav__menu-wrapper czr-open-on-click" >
+<ul id="mobile-nav-menu" class="mobile-nav__menu vertical-nav nav__menu flex-column nav"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43"><a href="http://localhost/undefined/index.php/category/blog/" class="nav__link"><span class="nav__title">Blog</span></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="http://localhost/undefined/index.php/category/datascience/" class="nav__link"><span class="nav__title">Data Science</span></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44"><a href="http://localhost/undefined/index.php/category/portfolio/" class="nav__link"><span class="nav__title">Portfolio</span></a></li>
+</ul></div>      </div>
+  </nav>
+</div></div></header>
+
+
+  
+    <div id="main-wrapper" class="section">
+
+                      
+
+          <div class="czr-hot-crumble container page-breadcrumbs" role="navigation" >
+  <div class="row">
+        <nav class="breadcrumbs col-12" itemprop="breadcrumb"><span class="trail-begin"><a href="http://localhost/undefined" title="Jitesh&#039;s Blog" rel="home" class="trail-begin">Home</a></span> <span class="sep">&raquo;</span> <span class="trail-end">jupyter notebook</span></nav>  </div>
+</div>
+          <div class="container" role="main">
+
+            
+            <div class="flex-row row column-content-wrapper">
+
+                
+                <div id="content" class="col-12 article-container">
+
+                  <header class="archive-header " >
+  <div class="archive-header-inner">
+        <h1 class="archive-title">
+      jupyter notebook    </h1>
+          <div class="header-bottom">
+        <span>
+          3 posts        </span>
+      </div>
+                    <hr class="featurette-divider">
+        </div>
+</header><div class="grid-container grid-container__alternate full" >
+  <div class="alternate__wrapper row">
+    <article id="post-101" class="col-12 grid-item has-media has-thumb round czr-link-mask-p post-101 post type-post status-publish format-standard has-post-thumbnail hentry category-datascience tag-jupyter-notebook tag-mnist tag-python tag-tensorflow" >
+      <div class="grid__item col">
+        <div class="sections-wrapper flex-row-reverse czr-center-sections row">
+        <section class="tc-thumbnail entry-media__holder col-md-4 col-12" >
+  <div class="entry-media__wrapper czr__r-i czr__r-wTCT js-centering">
+        <a class="czr-link-mask" rel="bookmark" title="Permalink to:&nbsp;Handwritten Digit Recognizer using Deep Learning" href="http://localhost/undefined/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/"></a>
+  <img  width="270" height="250"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost/undefined/contents/data/2018/08/deep-learning-270x250.jpg"  class="attachment-tc-thumb tc-thumb-type-thumb czr-img wp-post-image" alt="" /><div class="post-action btn btn-skin-dark-shaded inverted"><a href="http://localhost/undefined/contents/data/2018/08/deep-learning.jpg" class="expand-img icn-expand"></a></div>  </div>
+</section>            <section class="tc-content entry-content__holder col">
+              <div class="entry-content__wrapper">
+              <header class="entry-header " >
+  <div class="entry-header-inner ">
+            <div class="tax__container post-info entry-meta">
+          <a class="tax__link" href="http://localhost/undefined/index.php/category/datascience/" title="View all posts in Data Science"> <span>Data Science</span> </a>        </div>
+    
+    <h2 class="entry-title">
+      <a class="czr-title" href="http://localhost/undefined/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/" title="Permalink to Handwritten Digit Recognizer using Deep Learning" rel="bookmark">Handwritten Digit Recognizer using Deep Learning</a>
+    </h2>
+      </div>
+</header><div class="tc-content-inner entry-summary"  >
+            <div class="czr-wp-the-content">
+              <p>In this blog post, we are going to take a quick look at a Machine Learning technique that has taken the Technology Industry by storm. What is Deep Learning? Deep Learning is essentially a subset of Machine Learning that aims [&hellip;]</p>
+          </div>
+      </div><footer class="entry-footer" >      <div class="post-tags entry-meta">
+        <ul class="tags">
+          <li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/jupyter-notebook/" title="View all posts in jupyter notebook"> <span>jupyter notebook</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/mnist/" title="View all posts in mnist"> <span>mnist</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/python/" title="View all posts in python"> <span>python</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/tensorflow/" title="View all posts in tensorflow"> <span>tensorflow</span> </a></li>        </ul>
+      </div>
+            <div class="post-info clearfix entry-meta">
+
+          <div class="row flex-row">
+            <div class="col col-auto"><span class="author-meta">by <span class="author vcard"><span class="author_name"><a class="url fn n" href="http://localhost/undefined/index.php/author/jsinghviblogger/" title="View all posts by jsinghvi@blogger" rel="author">jsinghvi@blogger</a></span></span></span></div>              <div class="col col-auto">
                 <div class="row">
-				<div class="col-md-4 col-sm-8 col-xs-12">
-		        					<h1 class="site-title"><a href="http://jsinghvi.github.io/" rel="home">Jitesh&#039;s Blog</a></h1>
-					<h2 class="site-description">My Data Science journey!</h2>	        
-		        				</div>
-				<div class="col-md-8 col-sm-4 col-xs-12">
-					<div class="btn-menu"></div>
-					<nav id="mainnav" class="mainnav" role="navigation">
-						<div id="mega-menu-wrap-primary" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1' id='mega-toggle-block-1'><span class='mega-toggle-label'><span class='mega-toggle-label-closed'>MENU</span><span class='mega-toggle-label-open'>MENU</span></span></div></div></div><ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="200" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true"><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-64' id='mega-menu-item-64'><a class="dashicons-admin-home mega-menu-link" href="http://jiteshsinghvi.me" tabindex="0">Home</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-43' id='mega-menu-item-43'><a class="dashicons-format-chat mega-menu-link" href="http://jsinghvi.github.io/index.php/category/blog/" tabindex="0">Blog</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-42' id='mega-menu-item-42'><a class="dashicons-book-alt mega-menu-link" href="http://jsinghvi.github.io/index.php/category/datascience/" tabindex="0">Data Science</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-align-bottom-left mega-menu-flyout mega-has-icon mega-menu-item-44' id='mega-menu-item-44'><a class="dashicons-businessman mega-menu-link" href="http://jsinghvi.github.io/index.php/category/portfolio/" tabindex="0">Portfolio</a></li></ul></div>					</nav><!-- #site-navigation -->
-				</div>
-				</div>
-			</div>
-		</div>
-	</header><!-- #masthead -->
+                  <div class="col col-auto">Updated <a href="http://localhost/undefined/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/" title="Permalink to:&nbsp;Handwritten Digit Recognizer using Deep Learning" rel="bookmark"><time class="entry-date updated" datetime="2018-09-10T05:03:32+00:00">September 10, 2018</time></a></div>                </div>
+              </div>
+                      </div>
+        </div>
+            </footer>              </div>
+            </section>
+                    </div>
+      </div>
+    </article>
+    <article id="post-89" class="col-12 grid-item has-media has-thumb round czr-link-mask-p post-89 post type-post status-publish format-standard has-post-thumbnail hentry category-datascience tag-fashion-mnist tag-jupyter-notebook tag-keras tag-python" >
+      <div class="grid__item col">
+        <div class="sections-wrapper flex-row czr-center-sections row">
+        <section class="tc-thumbnail entry-media__holder col-md-4 col-12" >
+  <div class="entry-media__wrapper czr__r-i czr__r-wTCT js-centering">
+        <a class="czr-link-mask" rel="bookmark" title="Permalink to:&nbsp;Classification of apparels from Fashion MNIST dataset using Keras" href="http://localhost/undefined/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/"></a>
+  <img  width="270" height="250"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost/undefined/contents/data/2018/08/keras_fashion_mnist-270x250.jpeg"  class="attachment-tc-thumb tc-thumb-type-thumb czr-img wp-post-image" alt="" /><div class="post-action btn btn-skin-dark-shaded inverted"><a href="http://localhost/undefined/contents/data/2018/08/keras_fashion_mnist.jpeg" class="expand-img icn-expand"></a></div>  </div>
+</section>            <section class="tc-content entry-content__holder col">
+              <div class="entry-content__wrapper">
+              <header class="entry-header " >
+  <div class="entry-header-inner ">
+            <div class="tax__container post-info entry-meta">
+          <a class="tax__link" href="http://localhost/undefined/index.php/category/datascience/" title="View all posts in Data Science"> <span>Data Science</span> </a>        </div>
+    
+    <h2 class="entry-title">
+      <a class="czr-title" href="http://localhost/undefined/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/" title="Permalink to Classification of apparels from Fashion MNIST dataset using Keras" rel="bookmark">Classification of apparels from Fashion MNIST dataset using Keras</a>
+    </h2>
+      </div>
+</header><div class="tc-content-inner entry-summary"  >
+            <div class="czr-wp-the-content">
+              <p>In this post, we are going to talk about the Fashion MNIST dataset. It basically comprises of 55,000 Training Images and 10,000 Testing Images. Each one of them is a 28*28 grayscale image. Just like the MNIST digits dataset, there [&hellip;]</p>
+          </div>
+      </div><footer class="entry-footer" >      <div class="post-tags entry-meta">
+        <ul class="tags">
+          <li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/fashion-mnist/" title="View all posts in fashion mnist"> <span>fashion mnist</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/jupyter-notebook/" title="View all posts in jupyter notebook"> <span>jupyter notebook</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/keras/" title="View all posts in keras"> <span>keras</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/python/" title="View all posts in python"> <span>python</span> </a></li>        </ul>
+      </div>
+            <div class="post-info clearfix entry-meta">
 
-	
-	<div class="sydney-hero-area">
-				<div class="header-image">
-			<div class="overlay"></div>			<img class="header-inner" src="http://jsinghvi.github.io/contents/data/2018/07/cropped-matt-sclarandis-159838-unsplash-e1532007321208-1.jpg" width="1920" alt="Jitesh&#039;s Blog" title="Jitesh&#039;s Blog">
-		</div>
-		
-			</div>
+          <div class="row flex-row">
+            <div class="col col-auto"><span class="author-meta">by <span class="author vcard"><span class="author_name"><a class="url fn n" href="http://localhost/undefined/index.php/author/jsinghviblogger/" title="View all posts by jsinghvi@blogger" rel="author">jsinghvi@blogger</a></span></span></span></div>              <div class="col col-auto">
+                <div class="row">
+                  <div class="col col-auto">Updated <a href="http://localhost/undefined/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/" title="Permalink to:&nbsp;Classification of apparels from Fashion MNIST dataset using Keras" rel="bookmark"><time class="entry-date updated" datetime="2018-09-10T05:15:28+00:00">September 10, 2018</time></a></div>                </div>
+              </div>
+                      </div>
+        </div>
+            </footer>              </div>
+            </section>
+                    </div>
+      </div>
+    </article>
+    <article id="post-79" class="col-12 grid-item has-media has-thumb round czr-link-mask-p post-79 post type-post status-publish format-standard hentry category-datascience tag-jupyter-notebook tag-linear-regression tag-matplotlib tag-pandas tag-python" >
+      <div class="grid__item col">
+        <div class="sections-wrapper flex-row-reverse czr-center-sections row">
+        <section class="tc-thumbnail entry-media__holder col-md-4 col-12" >
+  <div class="entry-media__wrapper czr__r-i czr__r-wTCT js-centering">
+        <a class="czr-link-mask" rel="bookmark" title="Permalink to:&nbsp;Simple Linear Regression using Python" href="http://localhost/undefined/index.php/2018/07/27/simple-linear-regression-using-python/"></a>
+  <img  width="392" height="266"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost/undefined/contents/data/2018/07/linear_reg_matplotlib_graph.png"  class="attachment-large tc-thumb-type-attachment czr-img" alt="" data-srcset="http://localhost/undefined/contents/data/2018/07/linear_reg_matplotlib_graph.png 392w, http://localhost/undefined/contents/data/2018/07/linear_reg_matplotlib_graph-300x204.png 300w, http://localhost/undefined/contents/data/2018/07/linear_reg_matplotlib_graph-230x156.png 230w, http://localhost/undefined/contents/data/2018/07/linear_reg_matplotlib_graph-350x238.png 350w" data-sizes="(max-width: 392px) 100vw, 392px" /><div class="post-action btn btn-skin-dark-shaded inverted"><a href="http://localhost/undefined/contents/data/2018/07/linear_reg_matplotlib_graph.png" class="expand-img icn-expand"></a></div>  </div>
+</section>            <section class="tc-content entry-content__holder col">
+              <div class="entry-content__wrapper">
+              <header class="entry-header " >
+  <div class="entry-header-inner ">
+            <div class="tax__container post-info entry-meta">
+          <a class="tax__link" href="http://localhost/undefined/index.php/category/datascience/" title="View all posts in Data Science"> <span>Data Science</span> </a>        </div>
+    
+    <h2 class="entry-title">
+      <a class="czr-title" href="http://localhost/undefined/index.php/2018/07/27/simple-linear-regression-using-python/" title="Permalink to Simple Linear Regression using Python" rel="bookmark">Simple Linear Regression using Python</a>
+    </h2>
+      </div>
+</header><div class="tc-content-inner entry-summary"  >
+            <div class="czr-wp-the-content">
+              <p>Whenever one sets off to study about Machine Learning, the first thing they inadvertently come across is Linear Regression. It is arguably the simplest ML model. Let&#8217;s take a quick look at it with it&#8217;s implementation using Python. What is [&hellip;]</p>
+          </div>
+      </div><footer class="entry-footer" >      <div class="post-tags entry-meta">
+        <ul class="tags">
+          <li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/jupyter-notebook/" title="View all posts in jupyter notebook"> <span>jupyter notebook</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/linear-regression/" title="View all posts in linear regression"> <span>linear regression</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/matplotlib/" title="View all posts in matplotlib"> <span>matplotlib</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/pandas/" title="View all posts in pandas"> <span>pandas</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="http://localhost/undefined/index.php/tag/python/" title="View all posts in python"> <span>python</span> </a></li>        </ul>
+      </div>
+            <div class="post-info clearfix entry-meta">
 
-	
-	<div id="content" class="page-wrap">
-		<div class="container content-wrapper">
-			<div class="row">	
-	
-	<div id="primary" class="content-area col-md-9 classic">
+          <div class="row flex-row">
+            <div class="col col-auto"><span class="author-meta">by <span class="author vcard"><span class="author_name"><a class="url fn n" href="http://localhost/undefined/index.php/author/jsinghviblogger/" title="View all posts by jsinghvi@blogger" rel="author">jsinghvi@blogger</a></span></span></span></div>              <div class="col col-auto">
+                <div class="row">
+                  <div class="col col-auto">Updated <a href="http://localhost/undefined/index.php/2018/07/27/simple-linear-regression-using-python/" title="Permalink to:&nbsp;Simple Linear Regression using Python" rel="bookmark"><time class="entry-date updated" datetime="2018-09-10T05:23:41+00:00">September 10, 2018</time></a></div>                </div>
+              </div>
+                      </div>
+        </div>
+            </footer>              </div>
+            </section>
+                    </div>
+      </div>
+    </article>
+  </div>
+</div>
 
-		
-		<main id="main" class="post-wrap" role="main">
+<div id="czr-comments" class="comments-area " >
+      </div>                </div>
 
-		
-			<header class="page-header">
-				<h3 class="archive-title">Tag: jupyter notebook</h3>			</header><!-- .page-header -->
+                
+            </div><!-- .column-content-wrapper -->
 
-			<div class="posts-layout">
-			
-				
-<article id="post-79" class="post-79 post type-post status-publish format-standard hentry category-datascience tag-jupyter-notebook tag-linear-regression tag-matplotlib tag-pandas tag-python">
+            
 
-	
-	<header class="entry-header">
-		<h2 class="title-post entry-title"><a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/" rel="bookmark">Simple Linear Regression using Python</a></h2>
-				<div class="meta-post">
-			<span class="posted-on">Posted <a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/" rel="bookmark"><time class="entry-date published" datetime="2018-07-27T21:43:24+00:00">July 27, 2018</time><time class="updated" datetime="2018-07-27T21:45:30+00:00">July 27, 2018</time></a></span><span class="byline"> <span class="author vcard"><a class="url fn n" href="http://jsinghvi.github.io/index.php/author/jsinghviblogger/">jsinghvi@blogger</a></span></span><span class="comments-link"><a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/#respond">Leave a comment</a></span><span class="cat-links">Posted in <a href="http://jsinghvi.github.io/index.php/category/datascience/" rel="category tag">Data Science</a></span>		</div><!-- .entry-meta -->
-			</header><!-- .entry-header -->
+          </div><!-- .container -->
 
-	<div class="entry-post">
-					<p>Whenever one sets off to study about Machine Learning, the first thing they inadvertently come across is Linear Regression. It is arguably the simplest ML model. Let&#8217;s take a quick look at it with it&#8217;s [&hellip;]</p>
-		
-			</div><!-- .entry-post -->
+          <div id="czr-push-footer" ></div>
+    </div><!-- #main-wrapper -->
 
-	<footer class="entry-footer">
-			</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-						</div>
-			
-			
+    
+          <div class="container-fluid">
+              </div>
+    
+<footer id="footer" class="footer__wrapper" >
+  <div id="footer-widget-area" class="widget__wrapper" role="complementary" >
+  <div class="container widget__container">
+    <div class="row">
+                      <div id="footer_one" class="col-md-4 col-12">
+            <aside id="tag_cloud-3" class="widget widget_tag_cloud"><h5 class="widget-title">Tags</h5><div class="tagcloud"><a href="http://localhost/undefined/index.php/tag/30-day-challenges/" class="tag-cloud-link tag-link-7 btn btn-skin-dark-oh inverted tag-link-position-1" style="font-size: 1em;">30 day challenges</a>
+<a href="http://localhost/undefined/index.php/tag/cancer-dataset/" class="tag-cloud-link tag-link-19 btn btn-skin-dark-oh inverted tag-link-position-2" style="font-size: 1em;">cancer dataset</a>
+<a href="http://localhost/undefined/index.php/tag/classification/" class="tag-cloud-link tag-link-20 btn btn-skin-dark-oh inverted tag-link-position-3" style="font-size: 1em;">classification</a>
+<a href="http://localhost/undefined/index.php/tag/fashion-mnist/" class="tag-cloud-link tag-link-25 btn btn-skin-dark-oh inverted tag-link-position-4" style="font-size: 1em;">fashion mnist</a>
+<a href="http://localhost/undefined/index.php/tag/jupyter-notebook/" class="tag-cloud-link tag-link-15 btn btn-skin-dark-oh inverted tag-link-position-5" style="font-size: 1em;">jupyter notebook</a>
+<a href="http://localhost/undefined/index.php/tag/keras/" class="tag-cloud-link tag-link-24 btn btn-skin-dark-oh inverted tag-link-position-6" style="font-size: 1em;">keras</a>
+<a href="http://localhost/undefined/index.php/tag/life-lessons/" class="tag-cloud-link tag-link-8 btn btn-skin-dark-oh inverted tag-link-position-7" style="font-size: 1em;">life lessons</a>
+<a href="http://localhost/undefined/index.php/tag/linear-regression/" class="tag-cloud-link tag-link-14 btn btn-skin-dark-oh inverted tag-link-position-8" style="font-size: 1em;">linear regression</a>
+<a href="http://localhost/undefined/index.php/tag/logistic-regression/" class="tag-cloud-link tag-link-18 btn btn-skin-dark-oh inverted tag-link-position-9" style="font-size: 1em;">Logistic Regression</a>
+<a href="http://localhost/undefined/index.php/tag/matplotlib/" class="tag-cloud-link tag-link-13 btn btn-skin-dark-oh inverted tag-link-position-10" style="font-size: 1em;">matplotlib</a>
+<a href="http://localhost/undefined/index.php/tag/mnist/" class="tag-cloud-link tag-link-23 btn btn-skin-dark-oh inverted tag-link-position-11" style="font-size: 1em;">mnist</a>
+<a href="http://localhost/undefined/index.php/tag/motivation/" class="tag-cloud-link tag-link-9 btn btn-skin-dark-oh inverted tag-link-position-12" style="font-size: 1em;">motivation</a>
+<a href="http://localhost/undefined/index.php/tag/pandas/" class="tag-cloud-link tag-link-16 btn btn-skin-dark-oh inverted tag-link-position-13" style="font-size: 1em;">pandas</a>
+<a href="http://localhost/undefined/index.php/tag/python/" class="tag-cloud-link tag-link-12 btn btn-skin-dark-oh inverted tag-link-position-14" style="font-size: 1em;">python</a>
+<a href="http://localhost/undefined/index.php/tag/sklearn/" class="tag-cloud-link tag-link-17 btn btn-skin-dark-oh inverted tag-link-position-15" style="font-size: 1em;">sklearn</a>
+<a href="http://localhost/undefined/index.php/tag/tensorflow/" class="tag-cloud-link tag-link-22 btn btn-skin-dark-oh inverted tag-link-position-16" style="font-size: 1em;">tensorflow</a></div>
+</aside>          </div>
+                  <div id="footer_two" class="col-md-4 col-12">
+                      </div>
+                  <div id="footer_three" class="col-md-4 col-12">
+                      </div>
+                  </div>
+  </div>
+</div>
+<div id="colophon" class="colophon " >
+  <div class="container">
+    <div class="colophon__row row flex-row justify-content-between">
+      <div class="col-12 col-sm-auto">
+        <div id="footer__credits" class="footer__credits" >
+  <p class="czr-copyright">
+    <span class="czr-copyright-text">&copy;&nbsp;2018&nbsp;</span><a class="czr-copyright-link" href="http://localhost/undefined" title="Jitesh&#039;s Blog">Jitesh&#039;s Blog</a><span class="czr-rights-text">&nbsp;&ndash;&nbsp;All rights reserved</span>
+  </p>
+  <p class="czr-credits">
+    <span class="czr-designer">
+      <span class="czr-wp-powered"><span class="czr-wp-powered-text">Powered by&nbsp;</span><a class="czr-wp-powered-link fab fa-wordpress" title="Powered by WordPress" href="https://wordpress.org/" target="_blank"></a></span><span class="czr-designer-text">&nbsp;&ndash;&nbsp;Designed with the <a class="czr-designer-link" href="https://presscustomizr.com/customizr" title="Customizr theme">Customizr theme</a></span>
+    </span>
+  </p>
+</div>
+      </div>
+            <div class="col-12 col-sm-auto">
+        <div class="social-links">
+          <ul class="socials " >
+  <li ><a rel="nofollow" class="social-icon icon-github"  title="Follow me on Github" aria-label="Follow me on Github" href="https://github.com/jsinghvi/"  target="_blank" ><i class="fab fa-github"></i></a></li> <li ><a rel="nofollow" class="social-icon icon-linkedin"  title="Follow me on Linkedin" aria-label="Follow me on Linkedin" href="https://www.linkedin.com/in/jsinghvi/"  target="_blank" ><i class="fab fa-linkedin"></i></a></li> <li ><a rel="nofollow" class="social-icon icon-slack"  title="Join our local AI community on Slack" aria-label="Join our local AI community on Slack" href="https://invite-automation-for-jsoai.herokuapp.com/"  target="_blank" ><i class="fab fa-slack"></i></a></li></ul>
+        </div>
+      </div>
+          </div>
+  </div>
+</div>
+</footer>
+    </div><!-- end #tc-page-wrap -->
 
-		
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	
-
-<div id="secondary" class="widget-area col-md-3" role="complementary">
-	<aside id="search-4" class="widget widget_search"><h3 class="widget-title">Looking for something?</h3><form role="search" method="get" class="search-form" action="http://jsinghvi.github.io/">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
-				</label>
-				<input type="submit" class="search-submit" value="Search" />
-			</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
-											<li>
-					<a href="http://jsinghvi.github.io/index.php/2018/08/13/handwritten-digit-recognizer-using-deep-learning/">Handwritten Digit Recognizer using Deep Learning</a>
-									</li>
-											<li>
-					<a href="http://jsinghvi.github.io/index.php/2018/08/08/cancer-classification-using-logistic-regression/">Cancer Classification using Logistic Regression</a>
-									</li>
-											<li>
-					<a href="http://jsinghvi.github.io/index.php/2018/08/07/classification-apparels-from-fashion-mnist-dataset-using-keras/">Classification of apparels from Fashion MNIST dataset using Keras</a>
-									</li>
-											<li>
-					<a href="http://jsinghvi.github.io/index.php/2018/07/27/simple-linear-regression-using-python/">Simple Linear Regression using Python</a>
-									</li>
-											<li>
-					<a href="http://jsinghvi.github.io/index.php/2018/07/24/cry-of-the-sky/">Cry of the Sky</a>
-									</li>
-					</ul>
-		</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
-	<li class="cat-item cat-item-1"><a href="http://jsinghvi.github.io/index.php/category/blog/" >Blog</a>
-</li>
-	<li class="cat-item cat-item-2"><a href="http://jsinghvi.github.io/index.php/category/datascience/" >Data Science</a>
-</li>
-		</ul>
-</aside></div><!-- #secondary -->
-			</div>
-		</div>
-	</div><!-- #content -->
-
-	
-			
-
-	
-	<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
-		<div class="container">
-							<div class="sidebar-column col-md-4">
-					<aside id="sydney_contact_info-3" class="widget sydney_contact_info_widget"><h3 class="widget-title">Feel free to get in touch :</h3><div class="contact-email"><span><i class="fa fa-envelope"></i></span><a href="mailto:si&#110;&#103;hvi.jites&#104;&#64;&#103;ma&#105;&#108;.com">si&#110;&#103;hvi.jites&#104;&#64;&#103;ma&#105;&#108;.com</a></div></aside>				</div>
-				
-				
-				
-				
-		</div>	
-	</div>	
-    <a class="go-top"><i class="fa fa-angle-up"></i></a>
-		
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info container">
-			<a href="https://wordpress.org/">Proudly powered by WordPress</a>
-			<span class="sep"> | </span>
-			Theme: <a href="https://athemes.com/theme/sydney" rel="designer">Sydney</a> by aThemes.		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-
-	
-</div><!-- #page -->
-
-<script type='text/javascript' src='http://jsinghvi.github.io/contents/ui/theme/js/scripts.js'></script>
-<script type='text/javascript' src='http://jsinghvi.github.io/contents/ui/theme/js/main.min.js'></script>
-<script type='text/javascript' src='http://jsinghvi.github.io/contents/ui/theme/js/skip-link-focus-fix.js'></script>
-<script type='text/javascript' src='http://jsinghvi.github.io/inc/js/hoverIntent.min.js'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var megamenu = {"timeout":"300","interval":"100"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://jsinghvi.github.io/contents/lib/megamenu/js/maxmegamenu.js'></script>
-<script type='text/javascript' src='http://jsinghvi.github.io/contents/lib/oembed-gist/js/script.min.js'></script>
-
-</body>
-</html>
+    <section class="czr-overlay search_o">
+  <a href="#" class="search-close_btn search-toggle_btn czr-overlay-toggle_btn"><i class="icn-close"></i></a>
+  <div class="overlay-content">
+    <div class="search__wrapper">
+    <div class="search-form__container " >
+  <form action="http://localhost/undefined/" method="get" class="czr-form search-form">
+    <div class="form-group czr-focus">
+            <label for="s-5b95b3eeb62bd" id="lsearch-5b95b3eeb62bd"><span>Search</span><i class="icn-search"></i><i class="icn-close"></i></label>
+      <input id="s-5b95b3eeb62bd" class="form-control czr-search-field" name="s" type="text" value="" aria-describedby="lsearch-5b95b3eeb62bd" title="Search &hellip;">
+    </div>
+  </form>
+</div>    </div>
+  </div>
+</section><div class="btn czr-btt czr-btta right" ><i class="icn-up-small"></i></div>
+<script type='text/javascript' src='http://localhost/undefined/inc/js/jquery/ui/core.min.js'></script>
+<script type='text/javascript' src='http://localhost/undefined/contents/ui/theme/assets/front/js/libs/retina.min.js'></script>
+<script type='text/javascript' src='http://localhost/undefined/contents/lib/oembed-gist/js/script.min.js'></script>
+  </body>
+  </html>
